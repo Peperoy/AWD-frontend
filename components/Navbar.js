@@ -6,6 +6,12 @@ const navLink = (isActive) =>
 
 export default function Navbar({ activePage = null }) {
   const [activeSection, setActiveSection] = useState(null);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [menuOpen]);
 
   useEffect(() => {
     if (activePage !== 'home') return;
@@ -34,7 +40,8 @@ export default function Navbar({ activePage = null }) {
   }, [activePage]);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-md dark:border-slate-800 dark:bg-background-darker/80">
+    <>
+    <header className="fixed top-0 left-0 right-0 z-50 w-full border-b border-slate-200 bg-white/95 backdrop-blur-md dark:border-slate-800 dark:bg-background-darker/95">
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/">
           <a className="flex items-center gap-2 group">
@@ -69,10 +76,83 @@ export default function Navbar({ activePage = null }) {
             </a>
           </Link>
         </nav>
-        <button className="md:hidden p-2 text-slate-600 dark:text-slate-300">
-          <span className="material-symbols-outlined">menu</span>
+        <button
+          type="button"
+          className="md:hidden p-2 text-slate-600 dark:text-slate-300 -mr-2"
+          onClick={() => setMenuOpen((o) => !o)}
+          aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+        >
+          <span className="material-symbols-outlined text-3xl">
+            {menuOpen ? 'close' : 'menu'}
+          </span>
         </button>
       </div>
     </header>
+
+    {/* Mobile menu overlay */}
+    <div
+      className={`md:hidden fixed inset-0 z-40 transition-opacity duration-300 ${
+        menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+      }`}
+      style={{ top: '80px' }}
+    >
+      <div
+        className="absolute inset-0 bg-slate-900/50 dark:bg-slate-950/50 backdrop-blur-sm"
+        onClick={() => setMenuOpen(false)}
+        aria-hidden
+      />
+      <nav
+        className={`absolute left-0 right-0 top-0 bg-white dark:bg-background-darker border-b border-slate-200 dark:border-slate-800 shadow-xl transition-transform duration-300 ${
+          menuOpen ? 'translate-y-0' : '-translate-y-4'
+        }`}
+      >
+        <div className="flex flex-col p-6 gap-1">
+          <Link href="/">
+            <a
+              className={navLink(activePage === 'home' && activeSection === null) + ' py-4 px-4 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800/50 block'}
+              onClick={() => setMenuOpen(false)}
+            >
+              Accueil
+            </a>
+          </Link>
+          <Link href="/services">
+            <a
+              className={navLink(activePage === 'services') + ' py-4 px-4 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800/50 block'}
+              onClick={() => setMenuOpen(false)}
+            >
+              Services
+            </a>
+          </Link>
+          <Link href="/#portfolio">
+            <a
+              className={navLink(activePage === 'home' && activeSection === 'portfolio') + ' py-4 px-4 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800/50 block'}
+              onClick={() => setMenuOpen(false)}
+            >
+              Portfolio
+            </a>
+          </Link>
+          <Link href="/#about">
+            <a
+              className={navLink(activePage === 'home' && activeSection === 'about') + ' py-4 px-4 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800/50 block'}
+              onClick={() => setMenuOpen(false)}
+            >
+              À propos
+            </a>
+          </Link>
+          <Link href="/contact">
+            <a
+              className="mt-2 py-4 px-4 rounded-lg bg-primary-services text-white text-center font-bold block hover:bg-primary-services/90"
+              onClick={() => setMenuOpen(false)}
+            >
+              Nous contacter
+            </a>
+          </Link>
+        </div>
+      </nav>
+    </div>
+
+    {/* Spacer for fixed navbar */}
+    <div className="h-20" aria-hidden />
+    </>
   );
 }
