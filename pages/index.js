@@ -1,7 +1,5 @@
-import Home from '../components/Home';
+import Landing from '../components/Landing';
 
-function Index() {
-  return <Home />;
+export default function Home() {
+  return <Landing />;
 }
-
-export default Index;
