@@ -26,7 +26,7 @@ export default function Landing() {
         <Navbar activePage="home" />
 
         {/* Hero */}
-        <header id="hero" className="relative pt-44 pb-32 overflow-hidden hero-gradient">
+        <header id="hero" className="relative pt-20 pb-32 overflow-hidden hero-gradient">
           <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
             <div className="z-10">
               <span className="inline-block py-1.5 px-4 rounded-full bg-primary/10 text-primary dark:text-secondary font-semibold text-xs uppercase tracking-widest mb-6">
