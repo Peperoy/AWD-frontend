@@ -61,10 +61,10 @@ export default function ContactPage() {
       <div className="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-sans transition-colors duration-300 min-h-screen">
         <Navbar activePage="contact" />
 
-        <main className="relative min-h-screen geometric-bg pt-24">
+        <main className="relative min-h-screen geometric-bg pt-20">
           <div className="absolute top-0 right-0 -z-10 w-1/3 h-1/2 bg-gradient-to-bl from-primary/10 to-transparent blur-3xl"></div>
           <div className="absolute bottom-0 left-0 -z-10 w-1/4 h-1/2 bg-gradient-to-tr from-secondary/10 to-transparent blur-3xl"></div>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 lg:pt-10 lg:pb-24">
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               {/* Left column */}
               <div className="space-y-12">
