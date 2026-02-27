@@ -48,7 +48,7 @@ export default function Navbar({ activePage = null }) {
           <a className="flex items-center gap-2 group">
             <Image src="/Logo-bg.webp" alt="Atlas" width={120} height={40} className="h-10 w-auto object-contain" />
             <div className="flex flex-col -space-y-0.5">
-              <span className="font-futuristic italic text-xl font-bold tracking-wide text-primary-services">
+              <span className="font-futuristic italic text-xl font-bold tracking-wide text-slate-900 dark:text-primary-services">
                 Atlas
               </span>
               <span className="font-futuristic italic text-[10px] font-medium tracking-[0.15em] text-slate-500 dark:text-slate-400">

@@ -11,7 +11,7 @@ export default function Footer() {
               <a className="flex items-center gap-2 mb-6">
                 <Image src="/Logo-bg.webp" alt="Atlas" width={96} height={32} className="h-8 w-auto object-contain" />
                 <div className="flex flex-col -space-y-0.5">
-                  <span className="font-futuristic italic text-lg font-bold tracking-wide text-navy-deep dark:text-primary-services">
+                  <span className="font-futuristic italic text-lg font-bold tracking-wide text-slate-900 dark:text-primary-services">
                     Atlas
                   </span>
                   <span className="font-futuristic italic text-[10px] font-medium tracking-[0.15em] text-slate-500 dark:text-slate-400">
@@ -117,7 +117,7 @@ export default function Footer() {
         </div>
         <div className="pt-8 border-t border-slate-200 dark:border-slate-800 flex justify-center text-xs text-slate-400">
           <p>
-            © 2026 <span className="font-futuristic italic font-bold text-navy-deep dark:text-primary-services">Atlas Web Development</span>. Tous droits réservés.
+            © 2026 <span className="font-futuristic italic font-bold text-slate-900 dark:text-primary-services">Atlas Web Development</span>. Tous droits réservés.
           </p>
         </div>
       </div>

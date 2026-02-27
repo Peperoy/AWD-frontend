@@ -29,7 +29,7 @@ export default function Landing() {
 
         <main id="main-content">
         {/* Hero */}
-        <header id="hero" className="relative pt-20 pb-32 overflow-hidden hero-gradient">
+        <header id="hero" className="relative pt-20 pb-32 overflow-hidden hero-gradient min-h-[85vh]">
           <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
             <div className="z-10">
               <span className="inline-block py-1.5 px-4 rounded-full bg-primary/10 text-primary dark:text-secondary font-semibold text-xs uppercase tracking-widest mb-6">
@@ -167,7 +167,7 @@ export default function Landing() {
           <div className="max-w-7xl mx-auto px-6">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
               <div className="max-w-2xl">
-                <span className="text-navy-deep dark:text-primary font-bold tracking-widest uppercase text-sm mb-4 block">
+                <span className="text-slate-900 dark:text-primary font-bold tracking-widest uppercase text-sm mb-4 block">
                   Portfolio
                 </span>
                 <h2 className="font-display text-4xl md:text-5xl font-extrabold dark:text-white mb-6">
@@ -179,7 +179,7 @@ export default function Landing() {
                 </p>
               </div>
               <a
-                className="flex items-center gap-2 text-navy-deep dark:text-primary font-bold hover:gap-4 transition-all group"
+                className="flex items-center gap-2 text-slate-900 dark:text-primary font-bold hover:gap-4 transition-all group"
                 href="#contact"
               >
                 Lancer un projet similaire
@@ -210,7 +210,7 @@ export default function Landing() {
                 </div>
                 <div className="p-8">
                   <div className="flex flex-col gap-2 mb-4 w-fit">
-                    <span className="px-3 py-1 bg-primary/15 text-navy-deep dark:text-primary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
+                    <span className="px-3 py-1 bg-primary/15 text-slate-900 dark:text-primary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
                       E-commerce
                     </span>
                     <span className="px-3 py-1 bg-secondary/10 text-secondary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
@@ -247,7 +247,7 @@ export default function Landing() {
                 </div>
                 <div className="p-8">
                   <div className="flex flex-col gap-2 mb-4 w-fit">
-                    <span className="px-3 py-1 bg-primary/15 text-navy-deep dark:text-primary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
+                    <span className="px-3 py-1 bg-primary/15 text-slate-900 dark:text-primary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
                       Restaurant
                     </span>
                     <span className="px-3 py-1 bg-secondary/10 text-secondary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
@@ -284,7 +284,7 @@ export default function Landing() {
                 </div>
                 <div className="p-8">
                   <div className="flex flex-col gap-2 mb-4 w-fit">
-                    <span className="px-3 py-1 bg-primary/15 text-navy-deep dark:text-primary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
+                    <span className="px-3 py-1 bg-primary/15 text-slate-900 dark:text-primary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
                       Développement Web
                     </span>
                     <span className="px-3 py-1 bg-secondary/10 text-secondary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
@@ -314,7 +314,7 @@ export default function Landing() {
                 <div className="space-y-12 relative">
                   <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-slate-200 dark:bg-slate-700"></div>
                   <div className="relative pl-16">
-                    <div className="absolute left-0 w-12 h-12 bg-white dark:bg-slate-800 border-2 border-primary rounded-full flex items-center justify-center font-bold text-primary z-10 shadow-lg">
+                    <div className="absolute left-0 w-12 h-12 bg-white dark:bg-slate-800 border-2 border-primary rounded-full flex items-center justify-center font-bold text-slate-900 dark:text-primary z-10 shadow-lg">
                       01
                     </div>
                     <h3 className="font-display font-bold text-xl mb-2">Analyse &amp; Stratégie</h3>
@@ -324,7 +324,7 @@ export default function Landing() {
                     </p>
                   </div>
                   <div className="relative pl-16">
-                    <div className="absolute left-0 w-12 h-12 bg-white dark:bg-slate-800 border-2 border-primary rounded-full flex items-center justify-center font-bold text-primary z-10 shadow-lg">
+                    <div className="absolute left-0 w-12 h-12 bg-white dark:bg-slate-800 border-2 border-primary rounded-full flex items-center justify-center font-bold text-slate-900 dark:text-primary z-10 shadow-lg">
                       02
                     </div>
                     <h3 className="font-display font-bold text-xl mb-2">Conception &amp; Prototypage</h3>
@@ -334,7 +334,7 @@ export default function Landing() {
                     </p>
                   </div>
                   <div className="relative pl-16">
-                    <div className="absolute left-0 w-12 h-12 bg-white dark:bg-slate-800 border-2 border-primary rounded-full flex items-center justify-center font-bold text-primary z-10 shadow-lg">
+                    <div className="absolute left-0 w-12 h-12 bg-white dark:bg-slate-800 border-2 border-primary rounded-full flex items-center justify-center font-bold text-slate-900 dark:text-primary z-10 shadow-lg">
                       03
                     </div>
                     <h3 className="font-display font-bold text-xl mb-2">Développement Agile</h3>

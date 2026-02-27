@@ -1,0 +1,5 @@
+# https://www.atlas-web-dev.com
+User-agent: *
+Allow: /
+
+Sitemap: https://www.atlas-web-dev.com/sitemap.xml
