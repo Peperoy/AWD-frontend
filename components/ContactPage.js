@@ -31,6 +31,10 @@ export default function ContactPage() {
     ndaRequired: false,
   });
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [submitError, setSubmitError] = useState(null);
+
+  const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'hello@atlaswebdev.com';
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -38,19 +42,38 @@ export default function ContactPage() {
       ...prev,
       [name]: type === 'checkbox' ? checked : value,
     }));
+    setSubmitError(null);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    setFormData({
-      fullName: '',
-      email: '',
-      phone: '',
-      interestedIn: '',
-      projectDescription: '',
-      ndaRequired: false,
-    });
+    setSending(true);
+    setSubmitError(null);
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        setSubmitError(data.message || data.error || 'Envoi impossible. Réessayez plus tard.');
+        return;
+      }
+      setSubmitted(true);
+      setFormData({
+        fullName: '',
+        email: '',
+        phone: '',
+        interestedIn: '',
+        projectDescription: '',
+        ndaRequired: false,
+      });
+    } catch (err) {
+      setSubmitError('Erreur de connexion. Vérifiez votre réseau et réessayez.');
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -86,10 +109,10 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-bold text-lg">Nous contacter</h3>
                       <a
-                        href="mailto:hello@atlaswebdev.com"
+                        href={`mailto:${contactEmail}`}
                         className="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-secondary"
                       >
-                        hello@atlaswebdev.com
+                        {contactEmail}
                       </a>
                     </div>
                   </div>
@@ -162,6 +185,11 @@ export default function ContactPage() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
+                    {submitError && (
+                      <div className="rounded-lg bg-red-500/10 border border-red-500/30 text-red-600 dark:text-red-400 px-4 py-3 text-sm">
+                        {submitError}
+                      </div>
+                    )}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <label
@@ -277,13 +305,20 @@ export default function ContactPage() {
                       </label>
                     </div>
                     <button
-                      className="w-full bg-primary hover:bg-opacity-90 text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/30 transition-all flex items-center justify-center gap-2 group"
+                      className="w-full bg-primary hover:bg-opacity-90 text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/30 transition-all flex items-center justify-center gap-2 group disabled:opacity-70 disabled:cursor-not-allowed"
                       type="submit"
+                      disabled={sending}
                     >
-                      <span>Envoyer ma demande</span>
-                      <span className="material-icons text-sm group-hover:translate-x-1 transition-transform">
-                        send
-                      </span>
+                      {sending ? (
+                        <span>Envoi en cours…</span>
+                      ) : (
+                        <>
+                          <span>Envoyer ma demande</span>
+                          <span className="material-icons text-sm group-hover:translate-x-1 transition-transform">
+                            send
+                          </span>
+                        </>
+                      )}
                     </button>
                     <p className="text-xs text-center text-slate-500 mt-4">
                       En soumettant, vous acceptez notre{' '}
