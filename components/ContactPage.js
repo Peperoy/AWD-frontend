@@ -34,7 +34,7 @@ export default function ContactPage() {
   const [sending, setSending] = useState(false);
   const [submitError, setSubmitError] = useState(null);
 
-  const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'hello@atlaswebdev.com';
+  const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'atlaswebdev.pro@gmail.com';
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
