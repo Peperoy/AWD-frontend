@@ -322,13 +322,13 @@ export default function ContactPage() {
                     </button>
                     <p className="text-xs text-center text-slate-500 mt-4">
                       En soumettant, vous acceptez notre{' '}
-                      <a className="underline hover:text-primary" href="#">
-                        Politique de confidentialité
-                      </a>{' '}
+                      <Link href="/politique-confidentialite">
+                        <a className="underline hover:text-primary">Politique de confidentialité</a>
+                      </Link>{' '}
                       et nos{' '}
-                      <a className="underline hover:text-primary" href="#">
-                        Conditions d&apos;utilisation
-                      </a>
+                      <Link href="/conditions-generales-utilisation">
+                        <a className="underline hover:text-primary">Conditions d&apos;utilisation</a>
+                      </Link>
                       .
                     </p>
                   </form>

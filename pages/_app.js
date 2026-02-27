@@ -1,9 +1,11 @@
 import '../styles/globals.css';
 import Head from 'next/head';
+import GoogleAnalytics from '../components/GoogleAnalytics';
 
 function App({ Component, pageProps }) {
   return (
     <>
+      <GoogleAnalytics />
       <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"

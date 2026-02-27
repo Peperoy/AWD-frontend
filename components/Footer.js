@@ -93,19 +93,24 @@ export default function Footer() {
             <h4 className="font-bold mb-6 text-sm uppercase tracking-wider">Mentions légales</h4>
             <ul className="space-y-4 text-sm text-slate-500 dark:text-slate-400">
               <li>
-                <a className="hover:text-primary-services transition-colors" href="#">
-                  Politique de confidentialité
-                </a>
+                <Link href="/mentions-legales">
+                  <a className="hover:text-primary-services transition-colors">Mentions légales</a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-primary-services transition-colors" href="#">
-                  Conditions d&apos;utilisation
-                </a>
+                <Link href="/politique-confidentialite">
+                  <a className="hover:text-primary-services transition-colors">Politique de confidentialité</a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-primary-services transition-colors" href="#">
-                  Politique des cookies
-                </a>
+                <Link href="/conditions-generales-utilisation">
+                  <a className="hover:text-primary-services transition-colors">Conditions d&apos;utilisation</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/cookies">
+                  <a className="hover:text-primary-services transition-colors">Politique des cookies</a>
+                </Link>
               </li>
             </ul>
           </div>
