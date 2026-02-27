@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import Head from 'next/head';
 import GoogleAnalytics from '../components/GoogleAnalytics';
+import CookieBanner from '../components/CookieBanner';
 
 function App({ Component, pageProps }) {
   return (
@@ -23,6 +24,7 @@ function App({ Component, pageProps }) {
       <div className="dark">
         <Component {...pageProps} />
       </div>
+      <CookieBanner />
     </>
   );
 }

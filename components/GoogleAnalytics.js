@@ -1,8 +1,25 @@
 import Script from 'next/script';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import { hasConsentForAnalytics } from './CookieBanner';
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+
+/**
+ * Au chargement, restaure le consentement déjà enregistré (visiteur qui a déjà choisi "Tout accepter").
+ */
+function RestoreConsent() {
+  useEffect(() => {
+    if (!hasConsentForAnalytics() || typeof window === 'undefined' || !window.gtag) return;
+    window.gtag('consent', 'update', {
+      analytics_storage: 'granted',
+      ad_storage: 'granted',
+      ad_user_data: 'granted',
+      ad_personalization: 'granted',
+    });
+  }, []);
+  return null;
+}
 
 /**
  * Envoie un page_view à GA4 (appelé à chaque changement de route).
@@ -58,6 +75,7 @@ export default function GoogleAnalytics() {
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
       />
+      <RestoreConsent />
       <PageViewTracker />
     </>
   );

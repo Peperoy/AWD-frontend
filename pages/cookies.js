@@ -1,7 +1,16 @@
+import { useState } from 'react';
 import LegalPageLayout from '../components/LegalPageLayout';
 import Link from 'next/link';
+import { applyConsent } from '../components/CookieBanner';
 
 export default function Cookies() {
+  const [saved, setSaved] = useState(false);
+
+  const handleChoice = (choice) => {
+    applyConsent(choice);
+    setSaved(true);
+  };
+
   return (
     <LegalPageLayout
       title="Politique des cookies et gestion des traceurs"
@@ -72,12 +81,35 @@ export default function Cookies() {
       <p>
         Vous pouvez à tout moment modifier vos préférences en matière de cookies :
       </p>
+
+      <div className="not-prose my-6 p-4 rounded-xl bg-slate-800/50 border border-slate-700">
+        <h3 className="text-base font-semibold text-slate-200 mb-2">Modifier vos préférences</h3>
+        <p className="text-sm text-slate-400 mb-4">
+          Choisissez d’accepter ou de refuser les cookies de mesure d’audience. Votre choix est
+          enregistré et s’applique à votre prochaine visite.
+        </p>
+        <div className="flex flex-wrap gap-3">
+          <button
+            type="button"
+            onClick={() => handleChoice('necessary')}
+            className="px-4 py-2 text-sm font-medium rounded-lg border border-slate-500 text-slate-300 hover:bg-slate-700/50 transition-colors"
+          >
+            Tout refuser
+          </button>
+          <button
+            type="button"
+            onClick={() => handleChoice('all')}
+            className="px-4 py-2 text-sm font-medium rounded-lg bg-primary-services text-white hover:opacity-90 transition-opacity"
+          >
+            Tout accepter
+          </button>
+        </div>
+        {saved && (
+          <p className="text-sm text-primary-services mt-3">Votre choix a bien été enregistré.</p>
+        )}
+      </div>
+
       <ul>
-        <li>
-          En cliquant sur le lien « Gestion des cookies » ou « Préférences cookies » présent en pied
-          de page du site (à intégrer lorsque vous mettrez en place un bandeau ou une page de
-          paramétrage).
-        </li>
         <li>
           En configurant votre navigateur pour refuser ou supprimer les cookies. Les paramètres
           dépendent de chaque navigateur (ex. : Chrome, Firefox, Safari, Edge). Le refus de cookies
