@@ -15,7 +15,7 @@ export default function ContactHero() {
             <div className={styles.cardIcon}><span className="material-icons">email</span></div>
             <h3>Email us</h3>
             <p>
-              <a href="mailto:hello@atlaswebdev.com">hello@atlaswebdev.com</a>
+              <a href="mailto:hello@atlaswebdev.com">atlaswebdev.pro@gmail.com</a>
             </p>
           </div>
           <div className={styles.card}>
