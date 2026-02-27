@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const navLink = (isActive) =>
   `text-sm font-medium hover:text-primary-services transition-colors ${isActive ? 'font-semibold text-primary-services border-b-2 border-primary-services pb-1' : ''}`;
@@ -45,8 +46,7 @@ export default function Navbar({ activePage = null }) {
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/">
           <a className="flex items-center gap-2 group">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/Logo-bg.png" alt="Atlas" className="h-10 w-auto object-contain" />
+            <Image src="/Logo-bg.webp" alt="Atlas" width={120} height={40} className="h-10 w-auto object-contain" />
             <div className="flex flex-col -space-y-0.5">
               <span className="font-futuristic italic text-xl font-bold tracking-wide text-primary-services">
                 Atlas

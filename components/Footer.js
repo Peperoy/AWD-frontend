@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -8,10 +9,9 @@ export default function Footer() {
           <div className="md:col-span-1">
             <Link href="/">
               <a className="flex items-center gap-2 mb-6">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/Logo-bg.png" alt="Atlas" className="h-8 w-auto object-contain" />
+                <Image src="/Logo-bg.webp" alt="Atlas" width={96} height={32} className="h-8 w-auto object-contain" />
                 <div className="flex flex-col -space-y-0.5">
-                  <span className="font-futuristic italic text-lg font-bold tracking-wide text-primary-services">
+                  <span className="font-futuristic italic text-lg font-bold tracking-wide text-navy-deep dark:text-primary-services">
                     Atlas
                   </span>
                   <span className="font-futuristic italic text-[10px] font-medium tracking-[0.15em] text-slate-500 dark:text-slate-400">
@@ -40,7 +40,7 @@ export default function Footer() {
             </div> */}
           </div>
           <div>
-            <h4 className="font-bold mb-6 text-sm uppercase tracking-wider">Services</h4>
+            <h3 className="font-bold mb-6 text-sm uppercase tracking-wider">Services</h3>
             <ul className="space-y-4 text-sm text-slate-500 dark:text-slate-400">
               <li>
                 <Link href="/services#web-creation">
@@ -65,7 +65,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-bold mb-6 text-sm uppercase tracking-wider">Entreprise</h4>
+            <h3 className="font-bold mb-6 text-sm uppercase tracking-wider">Entreprise</h3>
             <ul className="space-y-4 text-sm text-slate-500 dark:text-slate-400">
               <li>
                 <Link href="/#about">
@@ -90,7 +90,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-bold mb-6 text-sm uppercase tracking-wider">Mentions légales</h4>
+            <h3 className="font-bold mb-6 text-sm uppercase tracking-wider">Mentions légales</h3>
             <ul className="space-y-4 text-sm text-slate-500 dark:text-slate-400">
               <li>
                 <Link href="/mentions-legales">
@@ -117,7 +117,7 @@ export default function Footer() {
         </div>
         <div className="pt-8 border-t border-slate-200 dark:border-slate-800 flex justify-center text-xs text-slate-400">
           <p>
-            © 2026 <span className="font-futuristic italic font-bold text-primary-services">Atlas Web Development</span>. Tous droits réservés.
+            © 2026 <span className="font-futuristic italic font-bold text-navy-deep dark:text-primary-services">Atlas Web Development</span>. Tous droits réservés.
           </p>
         </div>
       </div>

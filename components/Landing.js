@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -20,11 +21,13 @@ export default function Landing() {
     <>
       <Head>
         <title>Atlas Web Development | Stratégie &amp; Développement Digital</title>
+        <meta name="description" content="Développement web et pilotage digital pour entreprises. Sites vitrines, e-commerce, stratégie numérique. Expertise React, Next.js, WordPress. Basé à Chicago, au service de clients internationaux." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <div className="font-body bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
         <Navbar activePage="home" />
 
+        <main id="main-content">
         {/* Hero */}
         <header id="hero" className="relative pt-20 pb-32 overflow-hidden hero-gradient">
           <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
@@ -57,12 +60,14 @@ export default function Landing() {
               </div>
             </div>
             <div className="relative">
-              <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl shadow-navy-deep/20">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl shadow-navy-deep/20 aspect-square">
+                <Image
                   alt="Digital Strategy Dashboard"
-                  className="w-full object-cover aspect-square"
-                  src="/Dev.jpeg"
+                  src="/Dev.webp"
+                  width={600}
+                  height={600}
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div className="absolute -top-10 -right-10 w-40 h-40 bg-secondary/20 rounded-full blur-3xl"></div>
@@ -162,7 +167,7 @@ export default function Landing() {
           <div className="max-w-7xl mx-auto px-6">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
               <div className="max-w-2xl">
-                <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">
+                <span className="text-navy-deep dark:text-primary font-bold tracking-widest uppercase text-sm mb-4 block">
                   Portfolio
                 </span>
                 <h2 className="font-display text-4xl md:text-5xl font-extrabold dark:text-white mb-6">
@@ -174,7 +179,7 @@ export default function Landing() {
                 </p>
               </div>
               <a
-                className="flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all group"
+                className="flex items-center gap-2 text-navy-deep dark:text-primary font-bold hover:gap-4 transition-all group"
                 href="#contact"
               >
                 Lancer un projet similaire
@@ -189,11 +194,13 @@ export default function Landing() {
                 className="group bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-2xl hover:border-primary/30 transition-all duration-500 transform hover:-translate-y-2 block"
               >
                 <div className="relative h-64 overflow-hidden">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     alt="The White Shop - Boutique vêtements streetwear"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    src="/TWS.png"
+                    src="/TWS.webp"
+                    width={844}
+                    height={512}
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
                     <span className="text-white font-semibold flex items-center gap-2">
@@ -203,7 +210,7 @@ export default function Landing() {
                 </div>
                 <div className="p-8">
                   <div className="flex flex-col gap-2 mb-4 w-fit">
-                    <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
+                    <span className="px-3 py-1 bg-primary/15 text-navy-deep dark:text-primary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
                       E-commerce
                     </span>
                     <span className="px-3 py-1 bg-secondary/10 text-secondary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
@@ -224,11 +231,13 @@ export default function Landing() {
                 className="group bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-2xl hover:border-primary/30 transition-all duration-500 transform hover:-translate-y-2 block"
               >
                 <div className="relative h-64 overflow-hidden">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     alt="Ho Lamian - Restaurant chinois Rouen"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    src="/HO-Lamian.png"
+                    src="/HO-Lamian.webp"
+                    width={724}
+                    height={521}
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
                     <span className="text-white font-semibold flex items-center gap-2">
@@ -238,7 +247,7 @@ export default function Landing() {
                 </div>
                 <div className="p-8">
                   <div className="flex flex-col gap-2 mb-4 w-fit">
-                    <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
+                    <span className="px-3 py-1 bg-primary/15 text-navy-deep dark:text-primary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
                       Restaurant
                     </span>
                     <span className="px-3 py-1 bg-secondary/10 text-secondary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
@@ -259,11 +268,13 @@ export default function Landing() {
                 className="group bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-2xl hover:border-primary/30 transition-all duration-500 transform hover:-translate-y-2 block"
               >
                 <div className="relative h-64 overflow-hidden">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     alt="Honoris Cosa"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    src="/Honoris.png"
+                    src="/Honoris.webp"
+                    width={724}
+                    height={521}
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
                     <span className="text-white font-semibold flex items-center gap-2">
@@ -273,7 +284,7 @@ export default function Landing() {
                 </div>
                 <div className="p-8">
                   <div className="flex flex-col gap-2 mb-4 w-fit">
-                    <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
+                    <span className="px-3 py-1 bg-primary/15 text-navy-deep dark:text-primary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
                       Développement Web
                     </span>
                     <span className="px-3 py-1 bg-secondary/10 text-secondary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
@@ -306,7 +317,7 @@ export default function Landing() {
                     <div className="absolute left-0 w-12 h-12 bg-white dark:bg-slate-800 border-2 border-primary rounded-full flex items-center justify-center font-bold text-primary z-10 shadow-lg">
                       01
                     </div>
-                    <h4 className="font-display font-bold text-xl mb-2">Analyse &amp; Stratégie</h4>
+                    <h3 className="font-display font-bold text-xl mb-2">Analyse &amp; Stratégie</h3>
                     <p className="text-slate-500 dark:text-slate-400">
                       Immersion dans votre métier pour comprendre vos enjeux et définir les indicateurs
                       clés de succès (KPIs).
@@ -316,7 +327,7 @@ export default function Landing() {
                     <div className="absolute left-0 w-12 h-12 bg-white dark:bg-slate-800 border-2 border-primary rounded-full flex items-center justify-center font-bold text-primary z-10 shadow-lg">
                       02
                     </div>
-                    <h4 className="font-display font-bold text-xl mb-2">Conception &amp; Prototypage</h4>
+                    <h3 className="font-display font-bold text-xl mb-2">Conception &amp; Prototypage</h3>
                     <p className="text-slate-500 dark:text-slate-400">
                       Création des parcours utilisateurs et des maquettes haute fidélité pour une
                       expérience fluide et moderne.
@@ -326,7 +337,7 @@ export default function Landing() {
                     <div className="absolute left-0 w-12 h-12 bg-white dark:bg-slate-800 border-2 border-primary rounded-full flex items-center justify-center font-bold text-primary z-10 shadow-lg">
                       03
                     </div>
-                    <h4 className="font-display font-bold text-xl mb-2">Développement Agile</h4>
+                    <h3 className="font-display font-bold text-xl mb-2">Développement Agile</h3>
                     <p className="text-slate-500 dark:text-slate-400">
                       Codage itératif avec des points de suivi réguliers pour ajuster les
                       fonctionnalités en temps réel.
@@ -336,7 +347,7 @@ export default function Landing() {
                     <div className="absolute left-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-white z-10 shadow-lg shadow-primary/40">
                       04
                     </div>
-                    <h4 className="font-display font-bold text-xl mb-2">Déploiement &amp; Optimisation</h4>
+                    <h3 className="font-display font-bold text-xl mb-2">Déploiement &amp; Optimisation</h3>
                     <p className="text-slate-500 dark:text-slate-400">
                       Lancement officiel suivi d&apos;une phase d&apos;analyse de données pour maximiser
                       vos conversions.
@@ -345,9 +356,8 @@ export default function Landing() {
                 </div>
               </div>
               <div className="lg:w-1/2">
-                <div className="p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-2xl rotate-2">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img alt="Team meeting" className="rounded-xl" src={TEAM_IMG} />
+                <div className="p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-2xl rotate-2 relative aspect-video overflow-hidden">
+                  <Image alt="Team meeting" src={TEAM_IMG} layout="fill" className="object-cover rounded-xl" sizes="50vw" />
                 </div>
               </div>
             </div>
@@ -363,9 +373,8 @@ export default function Landing() {
                   <path d="M0 100 L100 0 L100 100 Z" fill="white"></path>
                 </svg>
               </div>
-              <div className="w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden flex-shrink-0 z-10 border-4 border-primary/20">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img alt="Henri De Boever" className="w-full h-full object-cover" src="/IMG_4270.jpg" />
+              <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden flex-shrink-0 z-10 border-4 border-primary/20">
+                <Image alt="Henri De Boever" src="/IMG_4270.webp" layout="fill" className="object-cover" sizes="16rem" />
               </div>
               <div className="z-10">
                 <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-white">
@@ -424,6 +433,7 @@ export default function Landing() {
           </div>
         </section>
 
+        </main>
         <Footer />
       </div>
     </>
