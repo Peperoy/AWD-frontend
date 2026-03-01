@@ -28,7 +28,7 @@ export default function ContactHero() {
           <div className={styles.card}>
             <div className={styles.cardIcon}><span className="material-icons">location_on</span></div>
             <h3>Global Reach</h3>
-            <p>Headquartered in Chicago. Serving clients worldwide.</p>
+            <p>Headquartered in Valenciennes. Serving clients worldwide.</p>
           </div>
         </div>
       </div>

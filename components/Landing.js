@@ -21,7 +21,7 @@ export default function Landing() {
     <>
       <Head>
         <title>Atlas Web Development | Stratégie &amp; Développement Digital</title>
-        <meta name="description" content="Développement web et pilotage digital pour entreprises. Sites vitrines, e-commerce, stratégie numérique. Expertise React, Next.js, WordPress. Basé à Chicago, au service de clients internationaux." />
+        <meta name="description" content="Développement web et pilotage digital pour entreprises. Sites vitrines, e-commerce, stratégie numérique. Expertise React, Next.js, WordPress. Basé à Valenciennes, au service de clients internationaux." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <div className="font-body bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
