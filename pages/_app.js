@@ -1,5 +1,6 @@
 import '../styles/globals.css';
 import Head from 'next/head';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import GoogleAnalytics from '../components/GoogleAnalytics';
 import CookieBanner from '../components/CookieBanner';
 
@@ -26,6 +27,7 @@ function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </div>
       <CookieBanner />
+      <SpeedInsights />
     </>
   );
 }
