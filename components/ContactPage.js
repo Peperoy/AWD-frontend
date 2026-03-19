@@ -34,7 +34,12 @@ export default function ContactPage() {
   const [sending, setSending] = useState(false);
   const [submitError, setSubmitError] = useState(null);
 
-  const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'atlaswebdev.pro@gmail.com';
+  // Prefer server-side env var when available (used by the contact API), to avoid
+  // mismatches between `NEXT_PUBLIC_*` values across environments.
+  const contactEmail =
+    process.env.CONTACT_EMAIL ||
+    process.env.NEXT_PUBLIC_CONTACT_EMAIL ||
+    'atlaswebdev.pro@gmail.com';
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
