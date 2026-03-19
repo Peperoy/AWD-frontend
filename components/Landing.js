@@ -262,15 +262,15 @@ export default function Landing() {
                 </div>
               </a>
               <a
-                href="https://honoris-frontend.vercel.app"
+                href="https://www.terrassespaysages.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-2xl hover:border-primary/30 transition-all duration-500 transform hover:-translate-y-2 block"
               >
                 <div className="relative h-64 overflow-hidden">
                   <Image
-                    alt="Honoris Cosa"
-                    src="/Honoris.webp"
+                    alt="Terrasses Paysages"
+                    src="/terrassespaysages.webp"
                     width={724}
                     height={521}
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -291,9 +291,9 @@ export default function Landing() {
                       Next.js
                     </span>
                   </div>
-                  <h3 className="font-display text-2xl font-bold mb-4 dark:text-white">Honoris Cosa</h3>
+                  <h3 className="font-display text-2xl font-bold mb-4 dark:text-white">Terrasses Paysages</h3>
                   <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
-                    Projet web développé avec Next.js. Interface moderne et performante.
+                    Site vitrine pour un paysagiste : présentation des prestations et prise de contact.
                   </p>
                 </div>
               </a>
