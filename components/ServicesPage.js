@@ -19,7 +19,7 @@ export default function ServicesPage() {
         <title>Services détaillés | Atlas Web Development</title>
         <meta
           name="description"
-          content="Découvrez les services Atlas : Création web, Gestion de projet, Support stratégique et Formation."
+          content="Découvrez les services Atlas : SaaS & applications web, automatisation n8n, gestion de projet, conseil stratégique et formation."
         />
       </Head>
       <div className="font-sans antialiased text-slate-900 bg-background-light dark:bg-background-darker dark:text-slate-100">
@@ -34,8 +34,8 @@ export default function ServicesPage() {
               &amp; stratégie digitale
             </h1>
             <p className="max-w-2xl mx-auto text-lg text-slate-600 dark:text-slate-400 mb-10">
-              Nous faisons le lien entre la complexité technique et les objectifs business, en livrant des solutions
-              web performantes adaptées à votre trajectoire de croissance.
+              Nous faisons le lien entre la complexité technique et les objectifs business : produits SaaS,
+              automatisation avec n8n et présence web, adaptés à votre trajectoire de croissance.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <div className="flex items-center gap-2 text-sm font-medium bg-white dark:bg-slate-800 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 shadow-sm">
@@ -67,11 +67,35 @@ export default function ServicesPage() {
                   Création web &amp; ingénierie
                 </h2>
                 <p className="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-                  Nous ne faisons pas que des sites web ; nous concevons des expériences numériques. Des sites
-                  vitrines à forte conversion aux applications web complexes et data-driven, notre stack est
-                  pensée pour la scalabilité et la vitesse.
+                  Nous concevons des produits numériques utiles au quotidien : applications SaaS, workflows
+                  automatisés avec n8n, et sites vitrines clairs pour votre image de marque. Stack pensée pour
+                  la scalabilité et la vitesse.
                 </p>
                 <div className="space-y-6">
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 h-12 w-12 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-primary-services">
+                      <span className="material-symbols-outlined">layers</span>
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-lg mb-1">SaaS &amp; applications métier</h3>
+                      <p className="text-sm text-slate-500 dark:text-slate-400">
+                        Plateformes SaaS et outils internes sur-mesure avec React, Next.js, TypeScript et backends
+                        modernes.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 h-12 w-12 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-primary-services">
+                      <span className="material-symbols-outlined">hub</span>
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-lg mb-1">Automatisation &amp; intégrations (n8n)</h3>
+                      <p className="text-sm text-slate-500 dark:text-slate-400">
+                        Workflows n8n : synchronisation d&apos;outils, CRM, notifications, tâches répétitives et
+                        passage de données entre vos systèmes.
+                      </p>
+                    </div>
+                  </div>
                   <div className="flex gap-4">
                     <div className="flex-shrink-0 h-12 w-12 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-primary-services">
                       <span className="material-symbols-outlined">web</span>
@@ -79,20 +103,8 @@ export default function ServicesPage() {
                     <div>
                       <h3 className="font-bold text-lg mb-1">Sites vitrines</h3>
                       <p className="text-sm text-slate-500 dark:text-slate-400">
-                        Designs SEO, mobile-first qui captent l&apos;essence de votre marque et transforment les
-                        visiteurs en leads.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex gap-4">
-                    <div className="flex-shrink-0 h-12 w-12 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-primary-services">
-                      <span className="material-symbols-outlined">layers</span>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg mb-1">Applications web complexes</h3>
-                      <p className="text-sm text-slate-500 dark:text-slate-400">
-                        Plateformes SaaS sur-mesure et outils internes développés avec React, Node.js et les
-                        frameworks modernes.
+                        Présence web SEO et mobile-first pour présenter votre activité et capter des demandes
+                        qualifiées.
                       </p>
                     </div>
                   </div>
@@ -232,13 +244,17 @@ export default function ServicesPage() {
                     Formez votre équipe : formation professionnelle
                   </h2>
                   <p className="text-white/90 text-lg mb-8 leading-relaxed">
-                    Le secteur tech évolue vite. Nous lançons des modules de formation dédiés pour que vos équipes
-                    maîtrisent les outils que nous construisons et restent à la pointe du développement web.
+                    Le secteur tech évolue vite. Nous lançons des modules pour que vos équipes maîtrisent le produit
+                    web, l&apos;automatisation (n8n) et les bonnes pratiques associées.
                   </p>
                   <div className="grid sm:grid-cols-2 gap-6 mb-8">
                     <div className="flex items-center gap-4">
                       <span className="material-symbols-outlined bg-white/10 p-2 rounded-lg">school</span>
-                      <span className="font-medium">Formation gestion CMS</span>
+                      <span className="font-medium">Prise en main du site &amp; des contenus</span>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <span className="material-symbols-outlined bg-white/10 p-2 rounded-lg">hub</span>
+                      <span className="font-medium">n8n : workflows &amp; intégrations</span>
                     </div>
                     <div className="flex items-center gap-4">
                       <span className="material-symbols-outlined bg-white/10 p-2 rounded-lg">psychology</span>

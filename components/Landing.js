@@ -21,7 +21,7 @@ export default function Landing() {
     <>
       <Head>
         <title>Atlas Web Development | Stratégie &amp; Développement Digital</title>
-        <meta name="description" content="Développement web et pilotage digital pour entreprises. Sites vitrines, e-commerce, stratégie numérique. Expertise React, Next.js, WordPress. Basé à Valenciennes, au service de clients internationaux." />
+        <meta name="description" content="Développement SaaS, automatisation (n8n) et pilotage digital pour entreprises. Sites vitrines, stratégie numérique. Expertise React, Next.js et TypeScript. Basé à Valenciennes, au service de clients internationaux." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <div className="font-body bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
@@ -33,15 +33,15 @@ export default function Landing() {
           <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
             <div className="z-10">
               <span className="inline-block py-1.5 px-4 rounded-full bg-primary/10 text-primary dark:text-secondary font-semibold text-xs uppercase tracking-widest mb-6">
-              Stratégie Numérique &amp; Web Dev
+              SaaS · Automatisation (n8n) · Web
               </span>
               <h1 className="font-display text-5xl md:text-6xl font-extrabold leading-[1.1] mb-8 dark:text-white">
-                Développement web &amp; pilotage digital pour entreprises{' '}
+                SaaS, automatisation (n8n) &amp; pilotage digital pour entreprises{' '}
                 <span className="text-primary">ambitieuses</span>
               </h1>
               <p className="text-lg text-slate-600 dark:text-slate-400 mb-10 max-w-xl leading-relaxed">
-                Nous transformons vos objectifs business en expériences numériques haut de gamme.
-                Expertise technique et vision stratégique au service de votre croissance.
+                Nous concevons des produits web, des workflows automatisés et des stratégies digitales alignées
+                sur vos objectifs. Expertise technique et vision produit au service de votre croissance.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -92,21 +92,21 @@ export default function Landing() {
                 </div>
                 <h3 className="font-display text-xl font-bold mb-4">Création Web</h3>
                 <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
-                  Développement de sites vitrines et applications web sur-mesure. Performance, SEO-ready
-                  et responsive design impeccable.
+                  Applications SaaS, automatisation avec n8n et sites vitrines sur-mesure. Performance, APIs
+                  et expérience utilisateur soignée.
                 </p>
                 <ul className="space-y-3 text-sm font-medium text-slate-500 dark:text-slate-400">
                   <li className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-primary text-base">check_circle</span>{' '}
-                    React / Next.js
+                    React / Next.js &amp; TypeScript
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-primary text-base">check_circle</span>{' '}
-                    WordPress &amp; Headless CMS
+                    Automatisation &amp; intégrations (n8n)
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-primary text-base">check_circle</span>{' '}
-                    Architecture Cloud
+                    CMS headless &amp; APIs
                   </li>
                 </ul>
               </div>
@@ -195,7 +195,7 @@ export default function Landing() {
               >
                 <div className="relative h-64 overflow-hidden">
                   <Image
-                    alt="The White Shop - Boutique vêtements streetwear"
+                    alt="The White Shop - Marque mode, plateforme web"
                     src="/TWS.webp"
                     width={844}
                     height={512}
@@ -211,16 +211,16 @@ export default function Landing() {
                 <div className="p-8">
                   <div className="flex flex-col gap-2 mb-4 w-fit">
                     <span className="px-3 py-1 bg-primary/15 text-slate-900 dark:text-primary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
-                      E-commerce
+                      Application web
                     </span>
                     <span className="px-3 py-1 bg-secondary/10 text-secondary text-xs font-bold rounded-full uppercase tracking-wider w-fit">
-                      Streetwear & Workwear
+                      Marque retail
                     </span>
                   </div>
                   <h3 className="font-display text-2xl font-bold mb-4 dark:text-white">The White Shop</h3>
                   <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
-                    Boutique de vêtements homme à Valenciennes. Site e-commerce streetwear et workwear
-                    avec une expérience d&apos;achat fluide et moderne.
+                    Plateforme web pour une marque mode à Valenciennes : parcours fluide, performance et
+                    identité visuelle au service de l&apos;expérience client.
                   </p>
                 </div>
               </a>

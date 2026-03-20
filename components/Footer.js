@@ -21,8 +21,8 @@ export default function Footer() {
               </a>
             </Link>
             <p className="text-sm text-slate-500 dark:text-slate-400 mb-6 leading-relaxed">
-              Excellence en stratégie digitale et développement web performant. Votre partenaire pour des
-              solutions web modernes.
+              SaaS, automatisation (n8n) et stratégie digitale. Votre partenaire pour des produits web utiles
+              et durables.
             </p>
             {/* <div className="flex gap-4">
               <a

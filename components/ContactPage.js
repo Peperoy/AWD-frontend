@@ -14,8 +14,10 @@ const PARTNER_LOGO_3 =
   'https://lh3.googleusercontent.com/aida-public/AB6AXuCt9J1aqzCh3YcYNhVwHs0T5EhNqSLnRR95OLbitLf_v-NXfp-TAAZJTpqQJA6LWGI_BNtO7Yvk5S9E7XTvePSF0M9lg_LE9R7HmZCggZ1O-o3ddNq_MVzE6th0HeBjiMCG5B2tDhZfUwHj8ye8-mAjrNeTi2oY1iHIh_Ab2XyKtBN2fXmowoolXzdVOmQt_MseMVG1SwYmoarzW_T1nUHOxsabN9B9rja_a7BMAPKq7diWLYuqXk-kpeJcJAdVU9tly5yEF2HYaJo';
 
 const INTEREST_OPTIONS = [
-  'Développement web sur-mesure',
+  'Application SaaS & produit web',
+  'Automatisation & workflows (n8n)',
   'Stratégie digitale',
+  'Site vitrine',
   'Design UI/UX',
   'Maintenance & Support',
   'Autre',
@@ -102,8 +104,8 @@ export default function ContactPage() {
                     <span className="text-primary dark:text-secondary">extraordinaire</span>.
                   </h1>
                   <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed max-w-lg">
-                    Prêt à faire grandir votre présence digitale ? Notre équipe est à vos côtés pour définir
-                    votre stratégie et développer des solutions web performantes.
+                    Un produit SaaS, des workflows n8n ou une vitrine qui convertit ? Nous vous accompagnons pour
+                    cadrer, construire et faire évoluer vos outils numériques.
                   </p>
                 </div>
                 <div className="space-y-8">
