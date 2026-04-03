@@ -225,7 +225,7 @@ export default function Landing() {
                 </div>
               </a>
               <a
-                href="https://ho-lamian-frontend.vercel.app/menuBook"
+                href="https://ho-lamian-frontend.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-2xl hover:border-primary/30 transition-all duration-500 transform hover:-translate-y-2 block"
