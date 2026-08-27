@@ -1,17 +1,29 @@
 import Link from 'next/link';
 
 const MANAGEMENT = [
-  'Méthodologie Agile & planification de sprints',
-  'Rédaction de spécifications techniques',
-  'Revue d’architecture & assurance qualité',
-  'Gestion des risques & allocation des ressources',
+  'Clarifier le besoin, les priorités et les livrables',
+  'Découper le projet en étapes compréhensibles',
+  'Valider régulièrement avant d’avancer',
+  'Rester l’interlocuteur unique jusqu’à la mise en ligne',
 ];
 
 const ADVISORY = [
-  { title: 'SEO & Performance', text: 'Audits techniques pour visibilité et vitesse de chargement.' },
-  { title: 'Audit UX/UI', text: 'Évaluations heuristiques pour améliorer parcours et conversions.' },
-  { title: 'Revue tech stack', text: 'Modernisation des systèmes legacy et infrastructure.' },
-  { title: 'Analyse concurrentielle', text: 'Benchmark de votre présence digitale face au secteur.' },
+  {
+    title: 'Être trouvé en ligne',
+    text: 'Regarder comment votre site se présente aux moteurs de recherche et sur téléphone.',
+  },
+  {
+    title: 'Parcours et clarté',
+    text: 'Vérifier que le visiteur comprend l’offre et sait comment vous contacter.',
+  },
+  {
+    title: 'Outil existant',
+    text: 'Faire le point sur ce qui bloque aujourd’hui, sans changer pour changer.',
+  },
+  {
+    title: 'Votre secteur',
+    text: 'Comparer votre présence en ligne à ce que vos clients voient déjà ailleurs.',
+  },
 ];
 
 export default function ServicesExtended() {
@@ -21,13 +33,13 @@ export default function ServicesExtended() {
         <div className="mx-auto max-w-atlas px-5 md:px-16 grid md:grid-cols-12 gap-8">
           <p className="label-caps md:col-span-2">04 /</p>
           <div className="md:col-span-10">
-            <p className="label-caps mb-3">Management</p>
+            <p className="label-caps mb-3">Pilotage</p>
             <h2 className="font-display text-headline uppercase mb-6 break-words min-w-0">
-              Coordination technique de projet
+              Un projet cadré, pas seulement du code
             </h2>
             <p className="text-muted text-lg leading-relaxed max-w-2xl mb-8">
-              Les projets complexes exigent plus que du code. Nous assurons la structuration et le
-              pilotage technique nécessaires pour respecter les délais et maintenir la qualité.
+              Structurer le besoin, les étapes et les livrables — pour avancer clairement, avec un
+              seul interlocuteur.
             </p>
             <ul className="space-y-4">
               {MANAGEMENT.map((item) => (
@@ -45,11 +57,13 @@ export default function ServicesExtended() {
         <div className="mx-auto max-w-atlas px-5 md:px-16 grid md:grid-cols-12 gap-8">
           <p className="label-caps md:col-span-2">05 /</p>
           <div className="md:col-span-10">
-            <p className="label-caps mb-3">Advisory</p>
-            <h2 className="font-display text-headline uppercase mb-6 break-words min-w-0">Audit &amp; stratégie digitale</h2>
+            <p className="label-caps mb-3">Accompagnement</p>
+            <h2 className="font-display text-headline uppercase mb-6 break-words min-w-0">
+              Faire le point avant de construire
+            </h2>
             <p className="text-muted text-lg leading-relaxed max-w-2xl mb-10">
-              Pilotez votre paysage digital en toute confiance. Identifier les freins, saisir les
-              opportunités et aligner la technologie sur vos objectifs business.
+              Identifier ce qui manque, ce qui bloque, et ce qui vaut vraiment la peine d’être
+              développé — sans jargon.
             </p>
             <div className="grid sm:grid-cols-2 gap-0 border border-ink/10">
               {ADVISORY.map((card) => (
@@ -71,14 +85,16 @@ export default function ServicesExtended() {
         <div className="mx-auto max-w-atlas px-5 md:px-16 grid md:grid-cols-12 gap-8">
           <p className="label-caps md:col-span-2">06 /</p>
           <div className="md:col-span-10">
-            <p className="label-caps mb-3">Formation</p>
-            <h2 className="font-display text-headline uppercase mb-6 break-words min-w-0">Formez votre équipe</h2>
+            <p className="label-caps mb-3">Prise en main</p>
+            <h2 className="font-display text-headline uppercase mb-6 break-words min-w-0">
+              Transmettre pour que ça vive sans vous
+            </h2>
             <p className="text-muted text-lg leading-relaxed max-w-2xl mb-8">
-              Modules pour que vos équipes maîtrisent le produit web, l&apos;automatisation (n8n) et
-              les bonnes pratiques associées.
+              Expliquer le site ou l’outil à vos équipes, pour qu’elles puissent le faire vivre au
+              quotidien.
             </p>
             <Link href="/contact">
-              <a className="btn-ghost-gold">Demander un accès anticipé →</a>
+              <a className="btn-ghost-gold">En parler →</a>
             </Link>
           </div>
         </div>
@@ -86,10 +102,10 @@ export default function ServicesExtended() {
 
       <section className="py-24 text-center">
         <h2 className="font-display text-headline uppercase mb-6 break-words min-w-0">
-          Prêt à faire grandir votre présence digitale ?
+          Un projet à poser ?
         </h2>
         <Link href="/contact">
-          <a className="btn-gold">Réserver une consultation →</a>
+          <a className="btn-gold">Parler de votre projet →</a>
         </Link>
       </section>
     </>

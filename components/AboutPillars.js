@@ -11,7 +11,7 @@ const PILLARS = [
   },
   {
     index: '03',
-    title: 'Développement full-stack',
+    title: 'Développement\nfull-stack',
     text: 'Passer de l’idée à une solution technique fonctionnelle.',
   },
   {
@@ -35,11 +35,13 @@ export default function AboutPillars() {
           {PILLARS.map((pillar) => (
             <article
               key={pillar.index}
-              className="relative p-8 border-b lg:border-b-0 md:border-r border-primary/15 last:border-0 md:[&:nth-child(2)]:border-r-0 lg:[&:nth-child(2)]:border-r"
+              className="relative min-w-0 overflow-hidden p-6 md:p-8 border-b lg:border-b-0 md:border-r border-primary/15 last:border-0 md:[&:nth-child(2)]:border-r-0 lg:[&:nth-child(2)]:border-r"
             >
               <span className="absolute top-0 left-0 h-1 w-1 bg-gold" />
               <p className="font-label text-[12px] font-bold text-gold mb-4">{pillar.index}</p>
-              <h3 className="font-display text-2xl font-bold uppercase mb-4">{pillar.title}</h3>
+              <h3 className="font-display text-lg md:text-xl font-bold uppercase leading-snug break-words whitespace-pre-line mb-4">
+                {pillar.title}
+              </h3>
               <p className="text-primary/70 leading-relaxed">{pillar.text}</p>
             </article>
           ))}

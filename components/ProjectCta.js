@@ -14,17 +14,17 @@ export default function ProjectCta() {
         <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
           <Link href="/contact">
             <a className="btn-ghost-gold">
-              Initiate Project
+              Parler de votre projet
               <span aria-hidden>→</span>
             </a>
           </Link>
         </div>
         <ul className="mt-16 flex flex-wrap justify-center gap-8 font-label text-[11px] font-bold uppercase tracking-[0.16em] text-muted">
-          <li>Development</li>
+          <li>Site web</li>
           <li className="text-gold">·</li>
-          <li>UI/UX Design</li>
+          <li>Application</li>
           <li className="text-gold">·</li>
-          <li>Strategy</li>
+          <li>Un interlocuteur</li>
         </ul>
       </div>
     </section>

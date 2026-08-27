@@ -4,22 +4,20 @@ import Link from 'next/link';
 const PILLARS = [
   {
     index: '01',
-    title: 'Management Digital',
-    text: 'Pilotage de projets complexes. Alignement des objectifs business avec la réalité technique pour des livrables sans compromis.',
+    title: 'Comprendre le métier',
+    text: 'Regarder le projet dans son ensemble : votre activité, vos priorités, ce qui doit vraiment avancer.',
   },
   {
     index: '02',
-    title: 'Développement Full-Stack',
-    text: 'Architecture robuste et code propre. De l’interface utilisateur léchée aux bases de données scalables.',
+    title: 'Construire la solution',
+    text: 'Passer de l’idée à un site ou une application qui fonctionne, avec un interlocuteur unique.',
   },
   {
     index: '03',
-    title: 'Esprit Entrepreneur',
-    text: 'Compréhension profonde des enjeux de croissance. Chaque ligne de code est pensée pour apporter de la valeur au produit final.',
+    title: 'Penser comme un porteur de projet',
+    text: 'Avoir aussi conçu ses propres produits : comprendre les enjeux business derrière un outil digital.',
   },
 ];
-
-const STACK = ['React', 'Next.js', 'Node.js'];
 
 export default function AboutHenri() {
   return (
@@ -36,9 +34,8 @@ export default function AboutHenri() {
               il y a Henri.
             </h2>
             <p className="mt-8 text-lg leading-relaxed text-primary/80 max-w-xl">
-              Un mélange d’expertise technique brute et d’une vision stratégique du design. Atlas
-              n’est pas juste une agence, c’est l’extension d’une volonté de construire des
-              expériences numériques qui marquent les esprits.
+              Un studio indépendant, un interlocuteur unique. Henri n’est pas seulement
+              développeur : il part de votre besoin métier, structure le projet, et le réalise.
             </p>
             <Link href="/a-propos">
               <a className="mt-8 inline-flex items-center gap-2 font-label text-xs font-bold uppercase tracking-[0.16em] text-gold hover:underline">
@@ -59,7 +56,7 @@ export default function AboutHenri() {
           </div>
         </div>
         <p className="font-label text-[12px] font-bold uppercase tracking-[0.1em] text-gold mt-20 mb-8">
-          Expertise
+          Ce que ça change pour vous
         </p>
         <div className="grid md:grid-cols-3 gap-0 border border-primary/15">
           {PILLARS.map((pillar) => (
@@ -73,23 +70,6 @@ export default function AboutHenri() {
               <p className="text-primary/70 leading-relaxed">{pillar.text}</p>
             </article>
           ))}
-        </div>
-        <div className="mt-20">
-          <h3 className="font-display text-headline uppercase mb-4">Stack</h3>
-          <p className="text-primary/70 max-w-xl mb-8">
-            Les outils de prédilection pour construire l’avenir numérique. Précision, performance et
-            fiabilité.
-          </p>
-          <ul className="flex flex-wrap gap-0 border border-primary/15 w-fit">
-            {STACK.map((tech) => (
-              <li
-                key={tech}
-                className="font-label text-xs font-bold uppercase tracking-[0.16em] px-6 py-4 border-r border-primary/15 last:border-0"
-              >
-                {tech}
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </section>

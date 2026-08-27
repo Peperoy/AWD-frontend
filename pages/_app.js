@@ -12,7 +12,7 @@ function App({ Component, pageProps }) {
       <Head>
         <meta
           name="description"
-          content="Atlas Web Development — Applications SaaS, automatisation de processus (n8n) et pilotage digital pour entreprises. Sites vitrines, accompagnement technique. Expertise React, Next.js et TypeScript."
+          content="Studio web indépendant à Valenciennes : création et refonte de sites internet, applications web et mobiles. Un interlocuteur unique, du besoin à la mise en ligne."
         />
       </Head>
       <Component {...pageProps} />

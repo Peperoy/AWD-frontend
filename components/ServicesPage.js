@@ -8,25 +8,39 @@ const BLOCKS = [
     id: 'sites-web',
     index: '01',
     label: 'Sites web',
-    title: 'Sites vitrines & présence digitale',
-    text: 'Présence web SEO et mobile-first pour présenter votre activité et capter des demandes qualifiées. Identité éditoriale, performance, conversion.',
-    points: ['SEO & mobile-first', 'CMS headless & APIs', 'Identité visuelle soignée'],
+    title: 'Un site qui présente votre activité et amène le contact',
+    text: 'Création ou refonte : montrer qui vous êtes, vos prestations, et rendre la prise de contact simple — y compris sur téléphone. Travail sur le référencement local quand c’est pertinent.',
+    points: [
+      'Présentation claire de l’activité',
+      'Parcours vers la prise de contact',
+      'Adapté au mobile',
+      'Référencement local, sans promesse de chiffres',
+    ],
   },
   {
     id: 'applications-web',
     index: '02',
     label: 'Applications web',
-    title: 'SaaS, n8n & ingénierie produit',
-    text: 'Nous concevons des produits numériques utiles au quotidien : applications SaaS, workflows automatisés avec n8n, stack pensée pour la scalabilité.',
-    points: ['React / Next.js & TypeScript', 'Automatisation & intégrations (n8n)', 'Plateformes métier sur-mesure'],
+    title: 'Un outil pensé pour votre activité',
+    text: 'Application web, outil métier ou produit en ligne : partir du besoin réel, le structurer, puis le construire. Pour les tâches répétitives, on peut aussi relier vos outils entre eux.',
+    points: [
+      'Outil métier ou produit sur-mesure',
+      'Fonctionnalités et intégrations utiles',
+      'Automatisation des tâches répétitives',
+      'Évolution par étapes, avec vous',
+    ],
   },
   {
     id: 'applications-mobiles',
     index: '03',
     label: 'Applications mobiles',
-    title: 'Expériences natives, performance d’abord',
-    text: 'Interfaces mobiles fluides, pensées pour le geste et la vitesse. Du PWA au produit mobile, nous gardons la même exigence d’ingénierie et de design.',
-    points: ['PWA & apps hybrides', 'Parcours tactiles soignés', 'Offline-first quand c’est utile'],
+    title: 'Une application dans la poche de vos clients ou de vos équipes',
+    text: 'Concevoir et développer une application mobile à partir de l’usage réel : ce qu’il faut faire, dans quel ordre, et comment ça se tient dans la main.',
+    points: [
+      'Parcours simple sur téléphone',
+      'Pour vos clients ou vos équipes',
+      'Identité et expérience travaillées',
+    ],
   },
 ];
 
@@ -34,10 +48,10 @@ export default function ServicesPage() {
   return (
     <>
       <Head>
-        <title>Services détaillés | Atlas Web Development</title>
+        <title>Services | Atlas Web Development</title>
         <meta
           name="description"
-          content="Découvrez les services Atlas : SaaS & applications web, automatisation n8n, gestion de projet, conseil stratégique et formation."
+          content="Création et refonte de sites internet, applications web et mobiles. Un interlocuteur unique pour cadrer, concevoir et réaliser votre projet digital."
         />
       </Head>
       <div className="font-body bg-background text-ink antialiased atlas-grid min-h-screen">
@@ -45,15 +59,15 @@ export default function ServicesPage() {
         <section className="relative overflow-hidden border-b border-ink/10 py-20 md:py-28">
           <div className="atlas-glow pointer-events-none absolute inset-0" aria-hidden />
           <div className="relative mx-auto max-w-atlas px-5 md:px-16">
-            <p className="label-caps mb-6">Expertise</p>
+            <p className="label-caps mb-6">Services</p>
             <h1 className="font-display text-display-md uppercase max-w-4xl break-words min-w-0">
-              Notre expertise
+              Ce que Atlas
               <br />
-              &amp; stratégie digitale
+              peut faire pour vous
             </h1>
             <p className="mt-8 max-w-2xl text-lg text-muted leading-relaxed">
-              Le lien entre complexité technique et objectifs business : produits SaaS, automatisation
-              n8n et présence web, adaptés à votre trajectoire de croissance.
+              Un site, une refonte, une application web ou mobile. Un seul interlocuteur pour
+              comprendre le besoin, structurer le projet et le réaliser.
             </p>
           </div>
         </section>

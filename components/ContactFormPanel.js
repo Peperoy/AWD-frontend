@@ -2,12 +2,11 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 const INTEREST_OPTIONS = [
-  'Application SaaS & produit web',
-  'Automatisation & workflows (n8n)',
-  'Stratégie digitale',
-  'Site vitrine',
-  'Design UI/UX',
-  'Maintenance & Support',
+  'Site vitrine / refonte',
+  'Application web',
+  'Application mobile',
+  'Outil métier',
+  'Automatisation',
   'Autre',
 ];
 

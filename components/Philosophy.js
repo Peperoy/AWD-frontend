@@ -4,13 +4,14 @@ export default function Philosophy() {
       <div className="mx-auto max-w-atlas px-5 md:px-16">
         <p className="label-caps mb-8">01 // Philosophie</p>
         <h2 className="font-display text-display-md uppercase max-w-5xl break-words min-w-0">
-          Pas juste du code. Une{' '}
-          <span className="text-gold">extension</span> de votre
-          <br className="md:hidden" /> identité digitale.
+          On part de votre{' '}
+          <span className="text-gold">activité</span>,
+          <br />
+          pas d’une techno.
         </h2>
         <p className="mt-10 max-w-2xl text-lg text-muted leading-relaxed">
-          Je ne me contente pas de développer. Je conçois des solutions digitales qui ont du
-          sens pour votre activité — utiles, cohérentes, et pensées pour durer.
+          Avant de parler d’outils, on clarifie ce dont vous avez besoin : être visible, recevoir
+          des demandes, ou doter vos équipes d’un outil qui leur sert vraiment.
         </p>
       </div>
     </section>

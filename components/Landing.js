@@ -13,10 +13,10 @@ export default function Landing() {
   return (
     <>
       <Head>
-        <title>Atlas Web Development | Stratégie &amp; Développement Digital</title>
+        <title>Atlas Web Development | Sites internet &amp; applications</title>
         <meta
           name="description"
-          content="Développement SaaS, automatisation (n8n) et pilotage digital pour entreprises. Sites vitrines, stratégie numérique. Expertise React, Next.js et TypeScript. Basé à Valenciennes, au service de clients internationaux."
+          content="Studio web indépendant à Valenciennes : création et refonte de sites internet, applications web et mobiles. Un interlocuteur unique, du besoin à la mise en ligne."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>

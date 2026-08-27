@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Hero() {
   return (
     <header id="hero" className="relative isolate overflow-hidden min-h-[88vh] flex items-center">
@@ -15,13 +17,15 @@ export default function Hero() {
           .
         </h1>
         <p className="mt-8 max-w-xl text-lg md:text-xl text-muted leading-relaxed">
-          Des sites web et produits digitaux conçus pour aller plus loin. Nous fusionnons
-          esthétique éditoriale et ingénierie de précision.
+          Création ou refonte de sites internet, applications web et mobiles. Un seul
+          interlocuteur, du besoin jusqu’à la mise en ligne.
         </p>
-        <a href="#method" className="mt-10 inline-flex items-center gap-3 font-label text-xs font-bold uppercase tracking-[0.16em] text-ink hover:text-gold transition-colors">
-          Découvrir le Process
-          <span aria-hidden>→</span>
-        </a>
+        <Link href="/contact">
+          <a className="mt-10 inline-flex items-center gap-3 font-label text-xs font-bold uppercase tracking-[0.16em] text-ink hover:text-gold transition-colors">
+            Parler de votre projet
+            <span aria-hidden>→</span>
+          </a>
+        </Link>
       </div>
     </header>
   );

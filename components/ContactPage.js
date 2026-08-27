@@ -12,7 +12,11 @@ export default function ContactPage() {
   return (
     <>
       <Head>
-        <title>Contact &amp; Projet | Atlas Web Development</title>
+        <title>Contact | Atlas Web Development</title>
+        <meta
+          name="description"
+          content="Parlez de votre projet : site internet, refonte, application web ou mobile. Réponse sous 24 à 48 heures. Atlas Web Development, Valenciennes."
+        />
       </Head>
       <div className="font-body bg-background text-ink antialiased atlas-grid min-h-screen">
         <Navbar activePage="contact" />
