@@ -1,0 +1,125 @@
+export const PROJECTS = [
+  {
+    index: '01',
+    title: 'The White Shop',
+    category: 'E-commerce / Design',
+    caseCategory: 'Refonte & développement web',
+    sector: 'Retail / Mode',
+    type: 'Réalisation',
+    featured: true,
+    href: 'https://thewhiteshop.fr',
+    image: '/TWS.webp',
+    alt: 'The White Shop — marque mode, plateforme web',
+    description:
+      'Plateforme web pour une marque mode à Valenciennes : parcours fluide, performance et identité visuelle au service de l’expérience client.',
+    context:
+      'Refonte d’une expérience web existante, initialement basée sur WordPress, afin de proposer une interface plus moderne, plus claire et davantage orientée expérience utilisateur.',
+    mission:
+      'Reconstruction de l’expérience côté frontend avec une approche moderne : interface, expérience utilisateur, présentation des produits, responsive, performances et SEO.',
+    deliverables: [
+      'Interface modernisée, orientée expérience utilisateur',
+      'Présentation des produits repensée',
+      'Responsive et performances retravaillés',
+      'Travail sur le SEO',
+      'Déploiement sur Vercel',
+    ],
+    stack: ['React', 'Contentful', 'Cloudinary', 'APIs', 'Vercel'],
+  },
+  {
+    index: '02',
+    title: 'Ho Lamian',
+    category: 'Restaurant / Menu digital',
+    caseCategory: 'Site web',
+    sector: 'Restauration',
+    type: 'Réalisation',
+    featured: true,
+    href: 'https://ho-lamian-frontend.vercel.app',
+    image: '/HO-Lamian.webp',
+    alt: 'Ho Lamian — restaurant chinois Rouen',
+    description:
+      'Restaurant de saveurs traditionnelles chinoises à Rouen. Carte interactive et menu digital pour une découverte fluide des plats.',
+    context:
+      'Créer une présence digitale moderne pour un restaurant de saveurs traditionnelles chinoises à Rouen : présenter l’univers du restaurant et ses informations de manière claire, adaptée aux usages mobiles.',
+    mission:
+      'Conception et développement de l’expérience web : présentation du restaurant, carte interactive et informations pratiques, pensées mobile-first.',
+    deliverables: [
+      'Présentation du restaurant et de son univers',
+      'Carte interactive / menu digital',
+      'Informations pratiques',
+      'Expérience mobile-first',
+    ],
+    stack: ['Développement web'],
+  },
+  {
+    index: '03',
+    title: 'Terrasses & Paysages',
+    category: 'Site vitrine / Next.js',
+    caseCategory: 'Site web',
+    sector: 'Paysagisme / Aménagement extérieur',
+    type: 'Réalisation',
+    featured: true,
+    href: 'https://www.terrassespaysages.com',
+    image: '/terrassespaysages.webp',
+    alt: 'Terrasses & Paysages — site vitrine paysagiste',
+    description: 'Site vitrine pour un paysagiste : présentation des prestations et prise de contact.',
+    context:
+      'Créer une présence web professionnelle pour présenter l’activité, les prestations et l’univers de Terrasses & Paysages.',
+    mission:
+      'Conception et développement du site : mise en valeur de l’activité et de l’univers visuel du paysagisme, avec un parcours clair vers la prise de contact.',
+    deliverables: [
+      'Présence web professionnelle',
+      'Présentation des prestations',
+      'Mise en valeur de l’activité',
+      'Parcours vers la prise de contact',
+      'Référencement / SEO local',
+    ],
+    stack: ['Next.js'],
+  },
+  {
+    index: '04',
+    title: 'Pokerz',
+    category: 'Application mobile',
+    caseCategory: 'Application mobile',
+    sector: 'EdTech / Gaming / Poker',
+    type: 'Projet personnel — en développement',
+    featured: false,
+    href: null,
+    image: null,
+    alt: 'Pokerz — application mobile d’apprentissage du poker',
+    context:
+      'Une application d’apprentissage du poker inspirée des mécaniques de gamification des applications éducatives comme Duolingo, pour rendre l’apprentissage plus accessible et plus ludique.',
+    mission:
+      'Projet personnel mené de bout en bout : imaginer le produit, travailler l’UX et la gamification, concevoir l’identité — dont la mascotte — et développer l’application mobile.',
+    deliverables: [
+      'Apprentissage sous forme de questions',
+      'Progression, XP et niveaux',
+      'Mécaniques de gamification',
+      'Identité et mascotte',
+      'Expérience mobile',
+    ],
+    stack: ['React Native', 'Expo'],
+  },
+  {
+    index: '05',
+    title: 'FinExtHub',
+    category: 'Produit SaaS',
+    caseCategory: 'Produit SaaS / Projet entrepreneurial',
+    sector: 'Financement public / GovTech',
+    type: 'Projet entrepreneurial',
+    featured: false,
+    href: null,
+    image: null,
+    alt: 'FinExtHub — plateforme de financements publics',
+    context:
+      'Une plateforme destinée à aider les collectivités et les entreprises à identifier, rechercher et gérer des opportunités de financements publics.',
+    mission:
+      'Projet entrepreneurial porté par Atlas : une réflexion produit complète — problématique, utilisateurs, fonctionnalités, modèle économique, UX et architecture technique.',
+    deliverables: [
+      'Recherche et identification des dispositifs pertinents',
+      'Gestion des opportunités de financement',
+      'Préparation et gestion des dossiers',
+      'IA sur certaines étapes du processus',
+    ],
+    stack: [],
+  },
+];

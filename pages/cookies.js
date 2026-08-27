@@ -82,31 +82,21 @@ export default function Cookies() {
         Vous pouvez à tout moment modifier vos préférences en matière de cookies :
       </p>
 
-      <div className="not-prose my-6 p-4 rounded-xl bg-slate-800/50 border border-slate-700">
-        <h3 className="text-base font-semibold text-slate-200 mb-2">Modifier vos préférences</h3>
-        <p className="text-sm text-slate-400 mb-4">
+      <div className="my-6 p-6 border border-ink/10 bg-surface">
+        <h3 className="font-display text-xl font-bold text-ink mb-2">Modifier vos préférences</h3>
+        <p className="text-sm text-muted mb-4">
           Choisissez d’accepter ou de refuser les cookies de mesure d’audience. Votre choix est
           enregistré et s’applique à votre prochaine visite.
         </p>
         <div className="flex flex-wrap gap-3">
-          <button
-            type="button"
-            onClick={() => handleChoice('necessary')}
-            className="px-4 py-2 text-sm font-medium rounded-lg border border-slate-500 text-slate-300 hover:bg-slate-700/50 transition-colors"
-          >
+          <button type="button" onClick={() => handleChoice('necessary')} className="btn-ghost">
             Tout refuser
           </button>
-          <button
-            type="button"
-            onClick={() => handleChoice('all')}
-            className="px-4 py-2 text-sm font-medium rounded-lg bg-primary-services text-white hover:opacity-90 transition-opacity"
-          >
+          <button type="button" onClick={() => handleChoice('all')} className="btn-gold">
             Tout accepter
           </button>
         </div>
-        {saved && (
-          <p className="text-sm text-primary-services mt-3">Votre choix a bien été enregistré.</p>
-        )}
+        {saved && <p className="text-sm text-gold mt-3">Votre choix a bien été enregistré.</p>}
       </div>
 
       <ul>

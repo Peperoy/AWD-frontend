@@ -1,123 +1,115 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import Logo from './Logo';
+
+const CONTACT_EMAIL = 'atlaswebdev.pro@gmail.com';
 
 export default function Footer() {
   return (
-    <footer className="bg-white dark:bg-surface-dark pt-20 pb-10 border-t border-slate-200 dark:border-slate-800">
-      <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-          <div className="md:col-span-1">
+    <footer className="relative overflow-hidden border-t border-ink/10 bg-surface pt-20 pb-10">
+      <p
+        aria-hidden
+        className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/4 select-none font-display text-[22vw] font-extrabold leading-none tracking-tighter text-ink/[0.04]"
+      >
+        ATLAS
+      </p>
+      <div className="relative z-10 mx-auto max-w-atlas px-5 md:px-16">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-4 mb-16">
+          <div>
             <Link href="/">
-              <a className="flex items-center gap-2 mb-6">
-                <Image src="/Logo-bg.webp" alt="Atlas" width={96} height={32} className="h-8 w-auto object-contain" />
-                <div className="flex flex-col -space-y-0.5">
-                  <span className="font-futuristic italic text-lg font-bold tracking-wide text-slate-900 dark:text-primary-services">
-                    Atlas
-                  </span>
-                  <span className="font-futuristic italic text-[10px] font-medium tracking-[0.15em] text-slate-500 dark:text-slate-400">
-                    Web Development
-                  </span>
-                </div>
+              <a className="inline-block mb-6">
+                <Logo variant="onDark" />
               </a>
             </Link>
-            <p className="text-sm text-slate-500 dark:text-slate-400 mb-6 leading-relaxed">
-              SaaS, automatisation (n8n) et stratégie digitale. Votre partenaire pour des produits web utiles
-              et durables.
+            <p className="label-caps mb-2">50°21&apos;N / 3°31&apos;E</p>
+            <p className="text-sm text-muted leading-relaxed">
+              Valenciennes. SaaS, automatisation (n8n) et stratégie digitale.
             </p>
-            {/* <div className="flex gap-4">
-              <a
-                className="h-10 w-10 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-400 hover:text-primary-services hover:border-primary-services transition-colors"
-                href="#"
-              >
-                <span className="material-symbols-outlined text-[20px]">public</span>
-              </a>
-              <a
-                className="h-10 w-10 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-400 hover:text-primary-services hover:border-primary-services transition-colors"
-                href="#"
-              >
-                <span className="material-symbols-outlined text-[20px]">mail</span>
-              </a>
-            </div> */}
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="mt-4 inline-block font-label text-xs text-gold hover:underline"
+            >
+              {CONTACT_EMAIL}
+            </a>
           </div>
           <div>
-            <h3 className="font-bold mb-6 text-sm uppercase tracking-wider">Services</h3>
-            <ul className="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+            <h3 className="label-caps mb-6">Services</h3>
+            <ul className="space-y-3 text-sm text-muted">
               <li>
-                <Link href="/services#web-creation">
-                  <a className="hover:text-primary-services transition-colors">Création web</a>
+                <Link href="/services#sites-web">
+                  <a className="hover:text-gold transition-colors">Sites web</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/services#applications-web">
+                  <a className="hover:text-gold transition-colors">Applications web</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/services#applications-mobiles">
+                  <a className="hover:text-gold transition-colors">Applications mobiles</a>
                 </Link>
               </li>
               <li>
                 <Link href="/services#project-management">
-                  <a className="hover:text-primary-services transition-colors">Gestion de projet</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/services#strategic-support">
-                  <a className="hover:text-primary-services transition-colors">Support stratégique</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/services#training">
-                  <a className="hover:text-primary-services transition-colors">Modules de formation</a>
+                  <a className="hover:text-gold transition-colors">Pilotage de projet</a>
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="font-bold mb-6 text-sm uppercase tracking-wider">Entreprise</h3>
-            <ul className="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+            <h3 className="label-caps mb-6">Studio</h3>
+            <ul className="space-y-3 text-sm text-muted">
               <li>
-                <Link href="/#about">
-                  <a className="hover:text-primary-services transition-colors">Notre histoire</a>
+                <Link href="/a-propos">
+                  <a className="hover:text-gold transition-colors">À propos</a>
                 </Link>
               </li>
               <li>
                 <Link href="/#method">
-                  <a className="hover:text-primary-services transition-colors">Méthodologie</a>
+                  <a className="hover:text-gold transition-colors">Méthode</a>
                 </Link>
               </li>
               <li>
-                <a className="hover:text-primary-services transition-colors" href="#">
-                  Carrières
-                </a>
+                <Link href="/portfolio">
+                  <a className="hover:text-gold transition-colors">Portfolio</a>
+                </Link>
               </li>
-              {/* <li>
-                <a className="hover:text-primary-services transition-colors" href="#">
-                  Blog
-                </a>
-              </li> */}
+              <li>
+                <Link href="/contact">
+                  <a className="hover:text-gold transition-colors">Contact</a>
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
-            <h3 className="font-bold mb-6 text-sm uppercase tracking-wider">Mentions légales</h3>
-            <ul className="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+            <h3 className="label-caps mb-6">Mentions</h3>
+            <ul className="space-y-3 text-sm text-muted">
               <li>
                 <Link href="/mentions-legales">
-                  <a className="hover:text-primary-services transition-colors">Mentions légales</a>
+                  <a className="hover:text-gold transition-colors">Mentions légales</a>
                 </Link>
               </li>
               <li>
                 <Link href="/politique-confidentialite">
-                  <a className="hover:text-primary-services transition-colors">Politique de confidentialité</a>
+                  <a className="hover:text-gold transition-colors">Confidentialité</a>
                 </Link>
               </li>
               <li>
                 <Link href="/conditions-generales-utilisation">
-                  <a className="hover:text-primary-services transition-colors">Conditions d&apos;utilisation</a>
+                  <a className="hover:text-gold transition-colors">CGU</a>
                 </Link>
               </li>
               <li>
                 <Link href="/cookies">
-                  <a className="hover:text-primary-services transition-colors">Politique des cookies</a>
+                  <a className="hover:text-gold transition-colors">Cookies</a>
                 </Link>
               </li>
             </ul>
           </div>
         </div>
-        <div className="pt-8 border-t border-slate-200 dark:border-slate-800 flex justify-center text-xs text-slate-400">
-          <p>
-            © 2026 <span className="font-futuristic italic font-bold text-slate-900 dark:text-primary-services">Atlas Web Development</span>. Tous droits réservés.
+        <div className="border-t border-ink/10 pt-8 text-center">
+          <p className="font-label text-[10px] uppercase tracking-[0.16em] text-muted">
+            © 2026 Atlas Web Development. Tous droits réservés.
           </p>
         </div>
       </div>
