@@ -29,8 +29,8 @@ export default function AboutHenri() {
           Introduction
         </p>
         <div className="grid lg:grid-cols-12 gap-12 items-start">
-          <div className="lg:col-span-7">
-            <h2 className="font-display text-display-md uppercase text-primary">
+          <div className="lg:col-span-7 min-w-0">
+            <h2 className="font-display text-display-md uppercase text-primary break-words min-w-0">
               Derrière Atlas,
               <br />
               il y a Henri.

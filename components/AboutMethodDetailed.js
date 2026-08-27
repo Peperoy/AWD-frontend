@@ -31,7 +31,7 @@ export default function AboutMethodDetailed() {
       <div className="atlas-glow pointer-events-none absolute inset-0" aria-hidden />
       <div className="relative mx-auto max-w-atlas px-5 md:px-16">
         <p className="label-caps mb-6">Méthode</p>
-        <h2 className="font-display text-headline uppercase mb-6 max-w-3xl">
+        <h2 className="font-display text-headline uppercase mb-6 max-w-3xl break-words min-w-0">
           Quatre étapes, du besoin au produit
         </h2>
         <p className="text-muted max-w-xl mb-16 leading-relaxed">

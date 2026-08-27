@@ -18,7 +18,7 @@ export default function Expertise() {
                 <a className="group flex items-center justify-between gap-6 py-8 md:py-10">
                   <span className="flex items-baseline gap-6 md:gap-12 min-w-0">
                     <span className="label-caps shrink-0">{item.index} /</span>
-                    <span className="font-display text-headline uppercase tracking-tight group-hover:text-gold transition-colors">
+                    <span className="font-display text-headline uppercase tracking-tight break-words min-w-0 group-hover:text-gold transition-colors">
                       {item.title}
                     </span>
                   </span>

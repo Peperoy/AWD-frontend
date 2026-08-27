@@ -3,9 +3,10 @@ export default function Philosophy() {
     <section className="border-t border-ink/10 py-24 md:py-32">
       <div className="mx-auto max-w-atlas px-5 md:px-16">
         <p className="label-caps mb-8">01 // Philosophie</p>
-        <h2 className="font-display text-display-md uppercase max-w-5xl">
+        <h2 className="font-display text-display-md uppercase max-w-5xl break-words min-w-0">
           Pas juste du code. Une{' '}
-          <span className="text-gold">extension</span> de votre identité digitale.
+          <span className="text-gold">extension</span> de votre
+          <br className="md:hidden" /> identité digitale.
         </h2>
         <p className="mt-10 max-w-2xl text-lg text-muted leading-relaxed">
           Je ne me contente pas de développer. Je conçois des solutions digitales qui ont du

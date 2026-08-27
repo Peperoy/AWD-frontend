@@ -26,7 +26,7 @@ export default function Process() {
     <section id="method" className="border-t border-ink/10 py-24 md:py-32">
       <div className="mx-auto max-w-atlas px-5 md:px-16">
         <p className="label-caps mb-6">Process</p>
-        <h2 className="font-display text-headline uppercase mb-16 max-w-3xl">
+        <h2 className="font-display text-headline uppercase mb-16 max-w-3xl break-words min-w-0">
           Notre méthode de travail
         </h2>
         <ol>

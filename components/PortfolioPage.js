@@ -56,7 +56,7 @@ function CaseStudy({ project, reversed }) {
           <p className="label-caps mb-3">
             {project.index} / {project.sector}
           </p>
-          <h2 className="font-display text-3xl md:text-5xl font-extrabold uppercase tracking-tight">
+          <h2 className="font-display text-3xl md:text-5xl font-extrabold uppercase tracking-tight break-words min-w-0">
             {project.title}
           </h2>
           <p className="mt-3 font-label text-[11px] font-bold uppercase tracking-[0.16em] text-muted">
@@ -137,12 +137,15 @@ export default function PortfolioPage() {
         <main>
           <header className="relative isolate overflow-hidden border-b border-ink/10 py-20 md:py-28">
             <div className="atlas-glow pointer-events-none absolute inset-0" aria-hidden />
-            <div className="relative mx-auto max-w-atlas px-5 md:px-16">
+            <div className="relative mx-auto max-w-atlas px-5 md:px-16 min-w-0">
               <p className="label-caps mb-6">Portfolio / Études de cas</p>
-              <h1 className="font-display text-display-md uppercase max-w-4xl">
+              <h1 className="font-display text-display-md uppercase max-w-4xl break-words min-w-0">
                 Des projets,
                 <br />
-                pas seulement des sites
+                pas{' '}
+                <br className="md:hidden" />
+                seulement
+                <br className="md:hidden" /> des sites
               </h1>
               <p className="mt-8 max-w-xl text-lg text-muted leading-relaxed">
                 Réalisations professionnelles et produits conçus en propre. Chaque projet est
@@ -158,9 +161,9 @@ export default function PortfolioPage() {
           </ul>
           <section className="border-b border-ink/10 py-20 md:py-28">
             <div className="mx-auto max-w-atlas px-5 md:px-16 grid md:grid-cols-12 gap-8 items-end">
-              <div className="md:col-span-8">
+              <div className="md:col-span-8 min-w-0">
                 <p className="label-caps mb-4">Méthode</p>
-                <h2 className="font-display text-headline uppercase max-w-2xl">
+                <h2 className="font-display text-headline uppercase max-w-2xl break-words min-w-0">
                   Derrière chaque projet, la même façon de travailler
                 </h2>
                 <p className="mt-6 max-w-xl text-muted leading-relaxed">

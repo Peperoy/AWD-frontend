@@ -46,7 +46,7 @@ export default function ServicesPage() {
           <div className="atlas-glow pointer-events-none absolute inset-0" aria-hidden />
           <div className="relative mx-auto max-w-atlas px-5 md:px-16">
             <p className="label-caps mb-6">Expertise</p>
-            <h1 className="font-display text-display-md uppercase max-w-4xl">
+            <h1 className="font-display text-display-md uppercase max-w-4xl break-words min-w-0">
               Notre expertise
               <br />
               &amp; stratégie digitale
@@ -64,7 +64,7 @@ export default function ServicesPage() {
                 <p className="label-caps md:col-span-2">{block.index} /</p>
                 <div className="md:col-span-10">
                   <p className="label-caps mb-3">{block.label}</p>
-                  <h2 className="font-display text-headline uppercase mb-6">{block.title}</h2>
+                  <h2 className="font-display text-headline uppercase mb-6 break-words min-w-0">{block.title}</h2>
                   <p className="text-muted text-lg leading-relaxed max-w-2xl mb-8">{block.text}</p>
                   <ul className="space-y-3">
                     {block.points.map((point) => (

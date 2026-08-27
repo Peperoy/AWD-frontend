@@ -21,7 +21,7 @@ export default function AboutJourney() {
     <section className="border-b border-ink/10 py-24 md:py-32">
       <div className="mx-auto max-w-atlas px-5 md:px-16">
         <p className="label-caps mb-6">Parcours</p>
-        <h2 className="font-display text-headline uppercase mb-16 max-w-3xl">
+        <h2 className="font-display text-headline uppercase mb-16 max-w-3xl break-words min-w-0">
           Trois phases, une même logique
         </h2>
         <ol className="grid md:grid-cols-3 gap-0 border border-ink/10">

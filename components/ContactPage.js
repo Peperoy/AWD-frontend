@@ -21,7 +21,7 @@ export default function ContactPage() {
           <div className="relative mx-auto max-w-atlas px-5 md:px-16 grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div className="min-w-0">
               <p className="label-caps mb-6">Contact</p>
-              <h1 className="font-display text-headline md:text-display-md uppercase mb-8">
+              <h1 className="font-display text-headline md:text-display-md uppercase mb-8 break-words min-w-0">
                 Parlons
                 <br />
                 de votre

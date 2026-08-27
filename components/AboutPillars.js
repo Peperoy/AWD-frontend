@@ -28,7 +28,7 @@ export default function AboutPillars() {
         <p className="font-label text-[12px] font-bold uppercase tracking-[0.1em] text-gold mb-6">
           Les 4 piliers
         </p>
-        <h2 className="font-display text-headline uppercase mb-16 max-w-3xl text-primary">
+        <h2 className="font-display text-headline uppercase mb-16 max-w-3xl text-primary break-words min-w-0">
           Un profil hybride, quatre piliers
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-0 border border-primary/15">

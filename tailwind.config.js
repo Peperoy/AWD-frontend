@@ -26,9 +26,9 @@ module.exports = {
         label: ['Space Mono', 'monospace'],
       },
       fontSize: {
-        'display-lg': ['clamp(3rem, 8vw, 7.5rem)', { lineHeight: '0.92', letterSpacing: '-0.04em', fontWeight: '800' }],
-        'display-md': ['clamp(2.5rem, 5vw, 5rem)', { lineHeight: '1.05', letterSpacing: '-0.02em', fontWeight: '800' }],
-        'headline': ['clamp(2rem, 3vw, 3rem)', { lineHeight: '1.08', fontWeight: '700' }],
+        'display-lg': ['clamp(1.85rem, 8vw, 7.5rem)', { lineHeight: '0.98', letterSpacing: '-0.03em', fontWeight: '800' }],
+        'display-md': ['clamp(1.5rem, 5vw, 5rem)', { lineHeight: '1.1', letterSpacing: '-0.02em', fontWeight: '800' }],
+        'headline': ['clamp(1.375rem, 3vw, 3rem)', { lineHeight: '1.15', fontWeight: '700' }],
       },
       borderRadius: {
         DEFAULT: '0px',

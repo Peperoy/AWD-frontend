@@ -9,7 +9,7 @@ export default function Portfolio() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <div>
             <p className="label-caps mb-4">Sélection de projets</p>
-            <h2 className="font-display text-display-md uppercase">
+            <h2 className="font-display text-display-md uppercase break-words min-w-0">
               Des projets
               <br />
               qui prennent vie

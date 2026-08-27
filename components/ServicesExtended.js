@@ -22,7 +22,7 @@ export default function ServicesExtended() {
           <p className="label-caps md:col-span-2">04 /</p>
           <div className="md:col-span-10">
             <p className="label-caps mb-3">Management</p>
-            <h2 className="font-display text-headline uppercase mb-6">
+            <h2 className="font-display text-headline uppercase mb-6 break-words min-w-0">
               Coordination technique de projet
             </h2>
             <p className="text-muted text-lg leading-relaxed max-w-2xl mb-8">
@@ -46,7 +46,7 @@ export default function ServicesExtended() {
           <p className="label-caps md:col-span-2">05 /</p>
           <div className="md:col-span-10">
             <p className="label-caps mb-3">Advisory</p>
-            <h2 className="font-display text-headline uppercase mb-6">Audit &amp; stratégie digitale</h2>
+            <h2 className="font-display text-headline uppercase mb-6 break-words min-w-0">Audit &amp; stratégie digitale</h2>
             <p className="text-muted text-lg leading-relaxed max-w-2xl mb-10">
               Pilotez votre paysage digital en toute confiance. Identifier les freins, saisir les
               opportunités et aligner la technologie sur vos objectifs business.
@@ -72,7 +72,7 @@ export default function ServicesExtended() {
           <p className="label-caps md:col-span-2">06 /</p>
           <div className="md:col-span-10">
             <p className="label-caps mb-3">Formation</p>
-            <h2 className="font-display text-headline uppercase mb-6">Formez votre équipe</h2>
+            <h2 className="font-display text-headline uppercase mb-6 break-words min-w-0">Formez votre équipe</h2>
             <p className="text-muted text-lg leading-relaxed max-w-2xl mb-8">
               Modules pour que vos équipes maîtrisent le produit web, l&apos;automatisation (n8n) et
               les bonnes pratiques associées.
@@ -85,7 +85,7 @@ export default function ServicesExtended() {
       </section>
 
       <section className="py-24 text-center">
-        <h2 className="font-display text-headline uppercase mb-6">
+        <h2 className="font-display text-headline uppercase mb-6 break-words min-w-0">
           Prêt à faire grandir votre présence digitale ?
         </h2>
         <Link href="/contact">

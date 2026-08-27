@@ -14,15 +14,16 @@ export default function Footer() {
       </p>
       <div className="relative z-10 mx-auto max-w-atlas px-5 md:px-16">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4 mb-16">
-          <div>
+          <div className="min-w-0">
             <Link href="/">
               <a className="inline-block mb-6">
                 <Logo variant="onDark" />
               </a>
             </Link>
-            <p className="label-caps mb-2">50°21&apos;N / 3°31&apos;E</p>
             <p className="text-sm text-muted leading-relaxed">
-              Valenciennes. SaaS, automatisation (n8n) et stratégie digitale.
+              Studio web indépendant à Valenciennes : création et refonte de
+              sites internet, applications web et mobiles. Un interlocuteur unique
+              qui comprend le besoin métier avant la solution technique.
             </p>
             <a
               href={`mailto:${CONTACT_EMAIL}`}
