@@ -33,7 +33,7 @@ export const PROJECTS = [
     sector: 'Restauration',
     type: 'Réalisation',
     featured: true,
-    href: 'https://ho-lamian-frontend.vercel.app',
+    href: 'https://www.holamian.fr',
     image: '/HO-Lamian.webp',
     alt: 'Ho Lamian — restaurant chinois Rouen',
     description:
