@@ -30,7 +30,8 @@ export default function AboutMethodDetailed() {
     <section id="method" className="relative isolate overflow-hidden py-24 md:py-32">
       <div className="atlas-glow pointer-events-none absolute inset-0" aria-hidden />
       <div className="relative mx-auto max-w-atlas px-5 md:px-16">
-        <p className="label-caps mb-6">Méthode</p>
+        <p className="label-caps mb-3">Méthode</p>
+        <span className="gold-rule mb-8" aria-hidden />
         <h2 className="font-display text-headline uppercase mb-6 max-w-3xl break-words min-w-0">
           Quatre étapes, du besoin au produit
         </h2>

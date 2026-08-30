@@ -25,7 +25,8 @@ export default function Expertise() {
   return (
     <section id="services" className="border-t border-ink/10 py-24 md:py-32">
       <div className="mx-auto max-w-atlas px-5 md:px-16">
-        <p className="label-caps mb-12">Ce que je peux faire</p>
+        <p className="label-caps mb-3">Ce que je peux faire</p>
+        <span className="gold-rule mb-12" aria-hidden />
         <ul>
           {ITEMS.map((item) => (
             <li key={item.index} className="border-t border-ink/10 last:border-b">

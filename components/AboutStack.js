@@ -17,7 +17,8 @@ export default function AboutStack() {
   return (
     <section className="border-b border-ink/10 py-24 md:py-32">
       <div className="mx-auto max-w-atlas px-5 md:px-16">
-        <p className="label-caps mb-6">Compétences techniques</p>
+        <p className="label-caps mb-3">Compétences techniques</p>
+        <span className="gold-rule mb-8" aria-hidden />
         <h2 className="font-display text-headline uppercase mb-6 max-w-3xl break-words min-w-0">
           Une stack full-stack, du frontend au déploiement
         </h2>

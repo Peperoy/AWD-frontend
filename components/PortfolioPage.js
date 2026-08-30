@@ -138,7 +138,8 @@ export default function PortfolioPage() {
           <header className="relative isolate overflow-hidden border-b border-ink/10 py-20 md:py-28">
             <div className="atlas-glow pointer-events-none absolute inset-0" aria-hidden />
             <div className="relative mx-auto max-w-atlas px-5 md:px-16 min-w-0">
-              <p className="label-caps mb-6">Portfolio / Études de cas</p>
+              <p className="label-caps mb-3">Portfolio / Études de cas</p>
+              <span className="gold-rule mb-6" aria-hidden />
               <h1 className="font-display text-display-md uppercase max-w-4xl break-words min-w-0">
                 Des projets,
                 <br />

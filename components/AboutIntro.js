@@ -16,8 +16,9 @@ export default function AboutIntro() {
       <header className="relative isolate overflow-hidden border-b border-ink/10 py-20 md:py-28">
         <div className="atlas-glow pointer-events-none absolute inset-0" aria-hidden />
         <div className="relative mx-auto max-w-atlas px-5 md:px-16 min-w-0">
-          <p className="label-caps mb-6">À propos</p>
-          <h1 className="font-display text-display-md uppercase max-w-4xl break-words min-w-0">
+          <p className="label-caps mb-3">À propos</p>
+          <span className="gold-rule mb-6" aria-hidden />
+          <h1 className="font-display text-display-md uppercase max-w-4xl w-full break-words min-w-0">
             Un studio{' '}
             <br className="md:hidden" />
             indépendant,
@@ -27,7 +28,7 @@ export default function AboutIntro() {
             interlocuteur
             <br className="md:hidden" /> unique
           </h1>
-          <p className="mt-8 max-w-2xl text-lg md:text-xl text-ink leading-relaxed">
+          <p className="lead-wrap mt-8 text-lg md:text-xl text-ink leading-relaxed">
             Mon avantage ? Comprendre aussi bien le problème
             <br className="hidden md:block" /> que la technologie qui permet de le résoudre.
           </p>
@@ -37,9 +38,10 @@ export default function AboutIntro() {
         <div className="mx-auto max-w-atlas px-5 md:px-16">
           <div className="grid lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-7 min-w-0">
-              <p className="font-label text-[12px] font-bold uppercase tracking-[0.1em] text-gold mb-6">
+              <p className="font-label text-[12px] font-bold uppercase tracking-[0.1em] text-gold mb-3">
                 Le profil
               </p>
+              <span className="gold-rule mb-6" aria-hidden />
               <h2 className="font-display text-display-md uppercase text-primary break-words min-w-0">
                 Derrière Atlas,
                 <br />
@@ -77,6 +79,7 @@ export default function AboutIntro() {
                   src="/IMG_4270.webp"
                   layout="fill"
                   className="object-cover grayscale"
+                  priority
                   sizes="(max-width: 1024px) 100vw, 28rem"
                 />
               </div>

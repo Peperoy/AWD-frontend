@@ -24,7 +24,8 @@ export default function ContactPage() {
           <div className="atlas-glow pointer-events-none absolute inset-0" aria-hidden />
           <div className="relative mx-auto max-w-atlas px-5 md:px-16 grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div className="min-w-0">
-              <p className="label-caps mb-6">Contact</p>
+              <p className="label-caps mb-3">Contact</p>
+              <span className="gold-rule mb-6" aria-hidden />
               <h1 className="font-display text-headline md:text-display-md uppercase mb-8 break-words min-w-0">
                 Parlons
                 <br />

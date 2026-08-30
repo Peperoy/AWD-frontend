@@ -5,14 +5,23 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
-  background-color: #040d15;
-  color: #e1e3e4;
-  font-family: 'Archivo Narrow', sans-serif;
+  background-color: #1a476a;
+  color: #ffffff;
+  font-family: Saira, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+#__next {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .material-symbols-outlined {
@@ -21,38 +30,39 @@ body {
 
 @layer components {
   .atlas-grid {
-    background-image:
-      linear-gradient(rgba(162, 202, 244, 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(162, 202, 244, 0.05) 1px, transparent 1px);
-    background-size: 48px 48px;
+    background-image: none;
   }
 
   .atlas-glow {
-    background: radial-gradient(ellipse 70% 50% at 50% 40%, rgba(26, 71, 106, 0.55) 0%, transparent 70%);
+    background: radial-gradient(ellipse 60% 45% at 50% 35%, rgba(200, 187, 132, 0.18) 0%, transparent 70%);
+  }
+
+  .gold-rule {
+    @apply block h-px w-12 bg-gold;
   }
 
   .btn-gold {
-    @apply inline-flex items-center justify-center gap-2 bg-gold text-background font-label font-bold uppercase tracking-widest px-6 py-3 text-xs border border-gold transition-colors hover:bg-transparent hover:text-gold;
+    @apply inline-flex items-center justify-center gap-2 bg-gold text-navy font-label font-bold uppercase tracking-widest px-5 py-3 text-[11px] md:text-xs border border-gold transition-colors hover:bg-transparent hover:text-gold max-w-full;
   }
 
   .btn-ghost-gold {
-    @apply inline-flex items-center justify-center gap-2 border border-gold text-gold bg-transparent font-label font-bold uppercase tracking-widest px-6 py-3 text-xs transition-colors hover:bg-gold hover:text-background;
+    @apply inline-flex items-center justify-center gap-2 border border-gold text-gold bg-transparent font-label font-bold uppercase tracking-widest px-5 py-3 text-[11px] md:text-xs transition-colors hover:bg-gold hover:text-navy max-w-full;
   }
 
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 border border-ink/20 text-ink bg-transparent font-label font-bold uppercase tracking-widest px-6 py-3 text-xs transition-colors hover:border-ink hover:bg-primary;
+    @apply inline-flex items-center justify-center gap-2 border border-ink/20 text-ink bg-transparent font-label font-bold uppercase tracking-widest px-5 py-3 text-[11px] md:text-xs transition-colors hover:border-ink hover:bg-gold hover:text-navy max-w-full;
   }
 
   .label-caps {
-    @apply font-label text-[12px] font-bold uppercase tracking-[0.1em] text-gold;
+    @apply font-label text-[12px] font-bold uppercase tracking-[0.14em] text-gold;
   }
 
   .input-underline {
-    @apply w-full bg-transparent border-0 border-b border-ink/20 rounded-none px-0 py-3 text-ink placeholder:text-muted/40 focus:border-gold focus:ring-0 focus:outline-none font-body text-base;
+    @apply w-full bg-transparent border-0 border-b border-ink/20 rounded-none px-0 py-3 text-ink placeholder:text-ink/40 focus:border-gold focus:ring-0 focus:outline-none font-body text-base;
   }
 
   .card-sharp {
-    @apply relative border border-ink/10 bg-surface;
+    @apply relative border border-ink/15 bg-background;
   }
 
   .connection-dot {
@@ -67,4 +77,12 @@ body {
   word-break: break-word;
   min-width: 0;
   max-width: 100%;
+}
+
+p {
+  overflow-wrap: break-word;
+}
+
+.lead-wrap {
+  max-width: min(36rem, calc(100vw - 2.5rem));
 }

@@ -25,9 +25,10 @@ export default function AboutPillars() {
   return (
     <section className="bg-neutral text-primary py-24 md:py-32">
       <div className="mx-auto max-w-atlas px-5 md:px-16">
-        <p className="font-label text-[12px] font-bold uppercase tracking-[0.1em] text-gold mb-6">
+        <p className="font-label text-[12px] font-bold uppercase tracking-[0.1em] text-gold mb-3">
           Les 4 piliers
         </p>
+        <span className="gold-rule mb-8" aria-hidden />
         <h2 className="font-display text-headline uppercase mb-16 max-w-3xl text-primary break-words min-w-0">
           Un profil hybride, quatre piliers
         </h2>

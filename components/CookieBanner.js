@@ -73,8 +73,8 @@ export default function CookieBanner() {
       aria-label="Choix des cookies"
       className="fixed bottom-0 left-0 right-0 z-[100] border-t border-ink/10 bg-surface p-5"
     >
-      <div className="mx-auto flex max-w-atlas flex-col gap-4 sm:flex-row sm:items-center sm:justify-between px-0 md:px-8">
-        <p className="text-sm text-muted max-w-2xl">
+      <div className="mx-auto flex max-w-atlas flex-col gap-4 sm:flex-row sm:items-center sm:justify-between px-0 md:px-8 min-w-0">
+        <p className="text-sm text-muted max-w-2xl min-w-0 break-words">
           Nous utilisons des cookies pour le fonctionnement du site et, avec votre accord, pour
           mesurer l&apos;audience (Google Analytics). Vous pouvez tout accepter, tout refuser ou{' '}
           <Link href="/cookies">
@@ -82,8 +82,8 @@ export default function CookieBanner() {
           </Link>
           .
         </p>
-        <div className="flex flex-wrap items-center gap-3 shrink-0">
-          <button type="button" onClick={refuseAll} className="btn-ghost">
+        <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 min-w-0">
+          <button type="button" onClick={refuseAll} className="btn-ghost-gold">
             Tout refuser
           </button>
           <button type="button" onClick={acceptAll} className="btn-gold">

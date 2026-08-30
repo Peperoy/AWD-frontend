@@ -5,7 +5,7 @@ const CONTACT_EMAIL = 'atlaswebdev.pro@gmail.com';
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden border-t border-ink/10 bg-surface pt-20 pb-10">
+    <footer className="relative overflow-hidden border-t border-gold/30 bg-background pt-20 pb-10">
       <p
         aria-hidden
         className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/4 select-none font-display text-[22vw] font-extrabold leading-none tracking-tighter text-ink/[0.04]"

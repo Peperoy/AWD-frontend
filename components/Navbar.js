@@ -28,7 +28,7 @@ export default function Navbar({ activePage = null }) {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 w-full border-b border-ink/10 bg-background/80 backdrop-blur-xl">
+      <header className="fixed top-0 left-0 right-0 z-50 w-full border-b border-gold/25 bg-background/90 backdrop-blur-xl">
         <div className="mx-auto flex h-20 max-w-atlas items-center justify-between px-5 md:px-16">
           <Link href="/">
             <a className="group" aria-label="Atlas Web Development — accueil">

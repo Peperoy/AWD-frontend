@@ -8,7 +8,8 @@ export default function Portfolio() {
       <div className="mx-auto max-w-atlas px-5 md:px-16">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <div>
-            <p className="label-caps mb-4">Sélection de projets</p>
+            <p className="label-caps mb-3">Sélection de projets</p>
+            <span className="gold-rule mb-4" aria-hidden />
             <h2 className="font-display text-display-md uppercase break-words min-w-0">
               Des projets
               <br />

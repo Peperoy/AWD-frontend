@@ -59,13 +59,14 @@ export default function ServicesPage() {
         <section className="relative overflow-hidden border-b border-ink/10 py-20 md:py-28">
           <div className="atlas-glow pointer-events-none absolute inset-0" aria-hidden />
           <div className="relative mx-auto max-w-atlas px-5 md:px-16">
-            <p className="label-caps mb-6">Services</p>
+            <p className="label-caps mb-3">Services</p>
+            <span className="gold-rule mb-6" aria-hidden />
             <h1 className="font-display text-display-md uppercase max-w-4xl break-words min-w-0">
               Ce que Atlas
               <br />
               peut faire pour vous
             </h1>
-            <p className="mt-8 max-w-2xl text-lg text-muted leading-relaxed">
+            <p className="lead-wrap mt-8 text-lg text-muted leading-relaxed">
               Un site, une refonte, une application web ou mobile. Un seul interlocuteur pour
               comprendre le besoin, structurer le projet et le réaliser.
             </p>
@@ -76,9 +77,11 @@ export default function ServicesPage() {
             <section key={block.id} id={block.id} className="border-b border-ink/10 py-20 md:py-24">
               <div className="mx-auto max-w-atlas px-5 md:px-16 grid md:grid-cols-12 gap-8">
                 <p className="label-caps md:col-span-2">{block.index} /</p>
-                <div className="md:col-span-10">
+                <div className="md:col-span-10 min-w-0">
                   <p className="label-caps mb-3">{block.label}</p>
-                  <h2 className="font-display text-headline uppercase mb-6 break-words min-w-0">{block.title}</h2>
+                  <h2 className="font-display text-headline uppercase mb-6 break-words min-w-0 max-w-full">
+                    {block.title}
+                  </h2>
                   <p className="text-muted text-lg leading-relaxed max-w-2xl mb-8">{block.text}</p>
                   <ul className="space-y-3">
                     {block.points.map((point) => (

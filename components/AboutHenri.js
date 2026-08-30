@@ -23,9 +23,10 @@ export default function AboutHenri() {
   return (
     <section id="about" className="bg-neutral text-primary py-24 md:py-32">
       <div className="mx-auto max-w-atlas px-5 md:px-16">
-        <p className="font-label text-[12px] font-bold uppercase tracking-[0.1em] text-gold mb-6">
+        <p className="font-label text-[12px] font-bold uppercase tracking-[0.1em] text-gold mb-3">
           Introduction
         </p>
+        <span className="gold-rule mb-6" aria-hidden />
         <div className="grid lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-7 min-w-0">
             <h2 className="font-display text-display-md uppercase text-primary break-words min-w-0">
@@ -50,6 +51,7 @@ export default function AboutHenri() {
                 src="/IMG_4270.webp"
                 layout="fill"
                 className="object-cover grayscale"
+                priority
                 sizes="(max-width: 1024px) 100vw, 28rem"
               />
             </div>

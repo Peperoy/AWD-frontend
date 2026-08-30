@@ -2,7 +2,8 @@ export default function Philosophy() {
   return (
     <section className="border-t border-ink/10 py-24 md:py-32">
       <div className="mx-auto max-w-atlas px-5 md:px-16">
-        <p className="label-caps mb-8">01 // Philosophie</p>
+        <p className="label-caps mb-3">01 // Philosophie</p>
+        <span className="gold-rule mb-8" aria-hidden />
         <h2 className="font-display text-display-md uppercase max-w-5xl break-words min-w-0">
           On part de votre{' '}
           <span className="text-gold">activité</span>,

@@ -20,7 +20,8 @@ export default function AboutJourney() {
   return (
     <section className="border-b border-ink/10 py-24 md:py-32">
       <div className="mx-auto max-w-atlas px-5 md:px-16">
-        <p className="label-caps mb-6">Parcours</p>
+        <p className="label-caps mb-3">Parcours</p>
+        <span className="gold-rule mb-8" aria-hidden />
         <h2 className="font-display text-headline uppercase mb-16 max-w-3xl break-words min-w-0">
           Trois phases, une même logique
         </h2>
