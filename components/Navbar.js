@@ -11,6 +11,7 @@ const LINKS = [
   { href: '/', label: 'Accueil', id: 'home' },
   { href: '/services', label: 'Services', id: 'services' },
   { href: '/portfolio', label: 'Portfolio', id: 'portfolio' },
+  { href: '/blog', label: 'Blog', id: 'blog' },
   { href: '/a-propos', label: 'À propos', id: 'about' },
 ];
 
@@ -35,7 +36,7 @@ export default function Navbar({ activePage = null }) {
               <Logo variant="onDark" />
             </a>
           </Link>
-          <nav className="hidden items-center gap-8 md:flex">
+          <nav className="hidden items-center gap-6 lg:gap-8 md:flex">
             {LINKS.map((item) => (
               <Link key={item.id} href={item.href}>
                 <a className={linkClass(activePage === item.id)}>{item.label}</a>
