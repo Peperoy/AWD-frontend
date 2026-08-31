@@ -68,6 +68,13 @@ body {
   .connection-dot {
     @apply absolute top-0 left-0 h-1 w-1 bg-gold;
   }
+
+  .page-hero {
+    min-height: calc(100svh - 5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .text-display-lg,

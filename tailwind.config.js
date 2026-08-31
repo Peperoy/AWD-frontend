@@ -26,9 +26,9 @@ module.exports = {
         label: ['"Saira Extra Expanded"', 'Saira', 'sans-serif'],
       },
       fontSize: {
-        'display-lg': ['clamp(1.5rem, 6.8vw, 6.5rem)', { lineHeight: '0.98', letterSpacing: '0.01em', fontWeight: '700' }],
-        'display-md': ['clamp(1.15rem, 4vw, 4.5rem)', { lineHeight: '1.12', letterSpacing: '0.01em', fontWeight: '700' }],
-        headline: ['clamp(1.15rem, 2.6vw, 2.75rem)', { lineHeight: '1.2', letterSpacing: '0.01em', fontWeight: '700' }],
+        'display-lg': ['clamp(2.35rem, 12vw, 6.5rem)', { lineHeight: '0.98', letterSpacing: '0.01em', fontWeight: '700' }],
+        'display-md': ['clamp(2.1rem, 9vw, 5rem)', { lineHeight: '1.12', letterSpacing: '0.01em', fontWeight: '700' }],
+        headline: ['clamp(1.45rem, 5.5vw, 3rem)', { lineHeight: '1.2', letterSpacing: '0.01em', fontWeight: '700' }],
       },
       borderRadius: {
         DEFAULT: '0px',

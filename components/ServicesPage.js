@@ -56,15 +56,17 @@ export default function ServicesPage() {
       </Head>
       <div className="font-body bg-background text-ink antialiased atlas-grid min-h-screen">
         <Navbar activePage="services" />
-        <section className="relative overflow-hidden border-b border-ink/10 py-20 md:py-28">
+        <section className="page-hero relative overflow-hidden border-b border-ink/10">
           <div className="atlas-glow pointer-events-none absolute inset-0" aria-hidden />
-          <div className="relative mx-auto max-w-atlas px-5 md:px-16">
+          <div className="relative mx-auto w-full max-w-atlas px-5 py-16 md:px-16">
             <p className="label-caps mb-3">Services</p>
             <span className="gold-rule mb-6" aria-hidden />
-            <h1 className="font-display text-display-md uppercase max-w-4xl break-words min-w-0">
-              Ce que Atlas
+            <h1 className="font-display text-display-md uppercase break-words min-w-0">
+              Ce que
+              <br className="md:hidden" /> Atlas
               <br />
-              peut faire pour vous
+              peut faire
+              <br className="md:hidden" /> pour vous
             </h1>
             <p className="lead-wrap mt-8 text-lg text-muted leading-relaxed">
               Un site, une refonte, une application web ou mobile. Un seul interlocuteur pour

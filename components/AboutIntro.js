@@ -13,12 +13,12 @@ const SCOPE = [
 export default function AboutIntro() {
   return (
     <>
-      <header className="relative isolate overflow-hidden border-b border-ink/10 py-20 md:py-28">
+      <header className="page-hero relative isolate overflow-hidden border-b border-ink/10">
         <div className="atlas-glow pointer-events-none absolute inset-0" aria-hidden />
-        <div className="relative mx-auto max-w-atlas px-5 md:px-16 min-w-0">
+        <div className="relative mx-auto w-full max-w-atlas px-5 py-16 md:px-16 min-w-0">
           <p className="label-caps mb-3">À propos</p>
           <span className="gold-rule mb-6" aria-hidden />
-          <h1 className="font-display text-display-md uppercase max-w-4xl w-full break-words min-w-0">
+          <h1 className="font-display text-display-md uppercase w-full break-words min-w-0">
             Un studio{' '}
             <br className="md:hidden" />
             indépendant,

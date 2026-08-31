@@ -20,20 +20,20 @@ export default function ContactPage() {
       </Head>
       <div className="font-body bg-background text-ink antialiased atlas-grid min-h-screen">
         <Navbar activePage="contact" />
-        <main className="relative py-16 md:py-24">
+        <main className="relative">
           <div className="atlas-glow pointer-events-none absolute inset-0" aria-hidden />
           <div className="relative mx-auto max-w-atlas px-5 md:px-16 grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-            <div className="min-w-0">
+            <div className="page-hero lg:min-h-0 lg:justify-start lg:py-24 min-w-0">
               <p className="label-caps mb-3">Contact</p>
               <span className="gold-rule mb-6" aria-hidden />
-              <h1 className="font-display text-headline md:text-display-md uppercase mb-8 break-words min-w-0">
+              <h1 className="font-display text-display-md uppercase mb-8 break-words min-w-0">
                 Parlons
                 <br />
                 de votre
                 <br />
                 <span className="text-gold">projet</span>.
               </h1>
-              <p className="text-lg text-muted leading-relaxed max-w-md mb-12">
+              <p className="lead-wrap text-lg text-muted leading-relaxed mb-12">
                 Un site, une application ou un produit digital. Un interlocuteur unique pour
                 comprendre le besoin, structurer le projet et le réaliser.
               </p>
@@ -50,7 +50,7 @@ export default function ContactPage() {
                 </li>
               </ul>
             </div>
-            <div className="min-w-0">
+            <div className="min-w-0 pb-16 lg:py-24">
               <ContactFormPanel />
             </div>
           </div>

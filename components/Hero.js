@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <header id="hero" className="relative isolate overflow-hidden min-h-[88vh] flex flex-col justify-center max-w-full">
+    <header id="hero" className="page-hero relative isolate overflow-hidden max-w-full">
       <div className="atlas-glow pointer-events-none absolute inset-0" aria-hidden />
       <div className="relative z-10 mx-auto w-full max-w-atlas min-w-0 px-5 md:px-16 py-20 md:py-28">
         <h1 className="font-display text-display-lg uppercase text-ink w-full max-w-full break-words min-w-0">

@@ -135,12 +135,12 @@ export default function PortfolioPage() {
       <div className="font-body bg-background text-ink antialiased atlas-grid min-h-screen">
         <Navbar activePage="portfolio" />
         <main>
-          <header className="relative isolate overflow-hidden border-b border-ink/10 py-20 md:py-28">
+          <header className="page-hero relative isolate overflow-hidden border-b border-ink/10">
             <div className="atlas-glow pointer-events-none absolute inset-0" aria-hidden />
-            <div className="relative mx-auto max-w-atlas px-5 md:px-16 min-w-0">
+            <div className="relative mx-auto w-full max-w-atlas px-5 py-16 md:px-16 min-w-0">
               <p className="label-caps mb-3">Portfolio / Études de cas</p>
               <span className="gold-rule mb-6" aria-hidden />
-              <h1 className="font-display text-display-md uppercase max-w-4xl break-words min-w-0">
+              <h1 className="font-display text-display-md uppercase break-words min-w-0">
                 Des projets,
                 <br />
                 pas{' '}
@@ -148,7 +148,7 @@ export default function PortfolioPage() {
                 seulement
                 <br className="md:hidden" /> des sites
               </h1>
-              <p className="mt-8 max-w-xl text-lg text-muted leading-relaxed">
+              <p className="lead-wrap mt-8 text-lg text-muted leading-relaxed">
                 Réalisations professionnelles et produits conçus en propre. Chaque projet est
                 présenté comme une mini étude de cas : le contexte, la mission, ce qui a été
                 construit et les technologies réellement utilisées.
