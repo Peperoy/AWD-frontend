@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ServicesFaq from './ServicesFaq';
 
 const MANAGEMENT = [
   'Clarifier le besoin, les priorités et les livrables',
@@ -100,13 +101,20 @@ export default function ServicesExtended() {
         </div>
       </section>
 
+      <ServicesFaq />
+
       <section className="py-24 text-center">
         <h2 className="font-display text-headline uppercase mb-6 break-words min-w-0">
           Un projet à poser ?
         </h2>
-        <Link href="/contact">
-          <a className="btn-gold">Parler de votre projet →</a>
-        </Link>
+        <div className="flex flex-wrap items-center justify-center gap-4">
+          <Link href="/contact?tab=devis">
+            <a className="btn-gold">Demander un devis →</a>
+          </Link>
+          <Link href="/contact">
+            <a className="btn-ghost-gold">Parler du projet →</a>
+          </Link>
+        </div>
       </section>
     </>
   );

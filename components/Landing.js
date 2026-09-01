@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Hero from './Hero';
 import Philosophy from './Philosophy';
 import Expertise from './Expertise';
+import OffersTeaser from './OffersTeaser';
 import Portfolio from './Portfolio';
 import Process from './Process';
 import AboutHenri from './AboutHenri';
@@ -26,6 +27,7 @@ export default function Landing() {
           <Hero />
           <Philosophy />
           <Expertise />
+          <OffersTeaser />
           <Portfolio />
           <Process />
           <AboutHenri />

@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import OfferCards from './OfferCards';
 import ServicesExtended from './ServicesExtended';
 
 const BLOCKS = [
@@ -75,6 +76,7 @@ export default function ServicesPage() {
           </div>
         </section>
         <main>
+          <OfferCards />
           {BLOCKS.map((block) => (
             <section key={block.id} id={block.id} className="border-b border-ink/10 py-20 md:py-24">
               <div className="mx-auto max-w-atlas px-5 md:px-16 grid md:grid-cols-12 gap-8">

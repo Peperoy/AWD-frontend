@@ -1,13 +1,14 @@
 import Head from 'next/head';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import ContactFormPanel from './ContactFormPanel';
+import ContactTabs from './ContactTabs';
 
 export default function ContactPage() {
   const contactEmail =
     process.env.CONTACT_EMAIL ||
     process.env.NEXT_PUBLIC_CONTACT_EMAIL ||
     'atlaswebdev.pro@gmail.com';
+  const calendarUrl = process.env.NEXT_PUBLIC_CALENDAR_URL || '';
 
   return (
     <>
@@ -50,8 +51,8 @@ export default function ContactPage() {
                 </li>
               </ul>
             </div>
-            <div className="min-w-0 pb-16 lg:py-24">
-              <ContactFormPanel />
+            <div className="min-w-0">
+              <ContactTabs calendarUrl={calendarUrl} />
             </div>
           </div>
         </main>

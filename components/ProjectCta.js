@@ -11,10 +11,16 @@ export default function ProjectCta() {
           produit était
           <br className="md:hidden" /> le vôtre ?
         </h2>
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
-          <Link href="/contact">
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+          <Link href="/contact?tab=devis">
+            <a className="btn-gold">
+              Demander un devis
+              <span aria-hidden>→</span>
+            </a>
+          </Link>
+          <Link href="/contact#rdv">
             <a className="btn-ghost-gold">
-              Parler de votre projet
+              Prendre rendez-vous
               <span aria-hidden>→</span>
             </a>
           </Link>

@@ -36,6 +36,11 @@ export default function Footer() {
             <h3 className="label-caps mb-6">Services</h3>
             <ul className="space-y-3 text-sm text-muted">
               <li>
+                <Link href="/services#offres">
+                  <a className="hover:text-gold transition-colors">Offres</a>
+                </Link>
+              </li>
+              <li>
                 <Link href="/services#sites-web">
                   <a className="hover:text-gold transition-colors">Sites web</a>
                 </Link>
@@ -78,6 +83,11 @@ export default function Footer() {
               <li>
                 <Link href="/portfolio">
                   <a className="hover:text-gold transition-colors">Portfolio</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact?tab=devis">
+                  <a className="hover:text-gold transition-colors">Devis</a>
                 </Link>
               </li>
               <li>
